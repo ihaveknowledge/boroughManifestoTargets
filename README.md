@@ -1,4 +1,4 @@
-# boroughManifestoTargets
+# Borough Manifesto Targets
 
 This repository is for the creation of the borough manifesto target's wheel.
 
