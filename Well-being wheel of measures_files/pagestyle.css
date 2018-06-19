@@ -1,0 +1,468 @@
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background:#284752;
+}
+
+#svgEle{
+	margin-top:0px;
+	margin-left:0px;
+	position:absolute;
+}
+
+.title{
+	top:10px;
+}
+
+#txtECONOM, #txtHEALTH, #txtGOVERN{
+	top:15px;
+}
+
+
+text{
+	pointer-events:none;
+}
+
+
+/******Nav bar style*********/
+/*#filterPERWEL{
+border-left: 5px solid #5454C9;
+}*/
+#filterPERWEL:hover{
+background:#424b7d;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+}
+
+/*#filterRELATI{
+border-left: 5px solid #9159b5;
+}*/
+#filterRELATI:hover{
+background: #6a568a;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+}
+
+/*#filterHEALTH{
+border-left: 5px solid #c49e00;
+}*/
+#filterHEALTH:hover{
+background: #ba9134;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+} 
+
+/*#filterWHWEDO{
+border-left: 5px solid #c44984;
+}*/
+#filterWHWEDO:hover{
+background: #9c5061;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+}
+
+/*#filterWHLIVE{
+border-left: 5px solid #7e9e00;
+}*/
+#filterWHLIVE:hover{
+background: #667843;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+}
+
+/*#filterPERFIN{
+border-left: 5px solid #009992;
+}*/
+#filterPERFIN:hover{
+background: #579190;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+}
+
+/*#filterECONOM{
+border-left: 5px solid #d98100;
+}*/
+#filterECONOM:hover{
+background: #b07535;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+}
+
+/*#filterEDUSKI{
+border-left: 5px solid #1368ff;
+}*/
+#filterEDUSKI:hover{
+background: #4783a6;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+}
+
+/*#filterGOVERN{
+border-left: 5px solid #298c45;
+}*/
+#filterGOVERN:hover{
+background: #5e9c69;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+}
+
+/*#filterNATENV{
+border-left: 5px solid #ad3c39;
+} */
+#filterNATENV:hover{
+background: #ad564d;
+box-shadow:0px 1px 3px rgba(0,0,0,0.5) inset;
+} 
+/***** Path fills *****/
+g path {
+  stroke: #467282;
+  fill:#467282;
+  opacity:0;
+}
+
+.swiper-slide{
+	cursor:pointer;
+}
+
+#ring{
+	left:-173px;
+	position:absolute;
+	top:-45px;
+	z-index:1;
+	pointer-events:none;
+}
+
+#ring circle{
+	opacity:0.8;
+	pointer-events:auto;
+	cursor:pointer;
+}
+
+#ring path {
+	pointer-events:auto;
+	opacity:0;
+}
+
+#ringImg{
+	position:absolute;
+	top:200px;
+	left: 400px;
+}
+
+#navBarImg{
+	position:absolute;
+	top:165px;
+	left:60px;
+	width:450px;
+}
+
+#GOVERN_Img, #EDUSKI_Img, #ECONOM_Img, #PERFIN_Img, #WHWEDO_Img, #HEALTH_Img, #PERWEL_Img, #WHLIVE_Img, #NATENV_Img, #RELATI_Img{
+position:absolute;
+z-index:-1;
+top:90px;	
+}
+
+.span2a, .span2b, .span3a, .span3b{
+ 	font-size:10px;
+}
+
+.span2c, .span3c{
+	font-size:9px;
+}
+
+/*path#PERWEL{fill:#449eb3}
+path#RELATI{fill:#9653ad;}
+path#HEALTH{fill:#f7ee5b;}
+path#WHWEDO{fill:#d160b6;} 
+path#WHLIVE{fill:#7ac274;}
+path#PERFIN{fill:#58e3d0;}
+path#ECONOM{fill:#f7a41e;}
+path#EDUSKI{fill:#2d59a2;}
+path#GOVERN{fill:#307336;}
+path#NATENV{fill:#bf3224;}
+
+path.PERWEL[data-sel="Y"]:hover {fill:#698b94;}
+path.RELATI[data-sel="Y"]:hover {fill:#9779a1;}
+path.HEALTH[data-sel="Y"]:hover {fill:#f7f7c8;}
+path.WHWEDO[data-sel="Y"]:hover {fill:#e0a4d2;} 
+path.WHLIVE[data-sel="Y"]:hover {fill:#a3c29f;}
+path.PERFIN[data-sel="Y"]:hover {fill:#b3e3dc;}
+path.ECONOM[data-sel="Y"]:hover {fill:#f7e1be;}
+path.EDUSKI[data-sel="Y"]:hover {fill:#6d81a2;}
+path.GOVERN[data-sel="Y"]:hover {fill:#779e7b;}
+path.NATENV[data-sel="Y"]:hover {fill:#d49892;}
+
+path[data-sel="Y"]{fill:#166078}
+path#PERWEL[data-sel="Y"]{fill:#449eb3}
+path#RELATI[data-sel="Y"]{fill:#9653ad;}
+path#HEALTH[data-sel="Y"]{fill:#f7ee5b;}
+path#WHWEDO[data-sel="Y"]{fill:#d160b6;} 
+path#WHLIVE[data-sel="Y"]{fill:#7ac274;}
+path#PERFIN[data-sel="Y"]{fill:#58e3d0;}
+path#ECONOM[data-sel="Y"]{fill:#f7a41e;}
+path#EDUSKI[data-sel="Y"]{fill:#2d59a2;}
+path#GOVERN[data-sel="Y"]{fill:#307336;}
+path#NATENV[data-sel="Y"]{fill:#bf3224;}*/
+
+
+
+tspan{pointer-events:none; font-family:open_sansregular; font-size:8px;}
+
+/*.device {
+  width: 840px;
+  height: 430px;
+  padding: 30px 60px;
+  background:none;
+  margin: 0px auto;
+  position: absolute;
+  opacity:0.8;
+  z-index:2;
+  top:-20px;
+  
+}
+*/
+/*.device .arrow-left {
+  background: url(./images/bArrow.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 35%;
+  margin-top: -15px;
+  width: 52px;
+  height: 180px;
+  -moz-transform:scale(0.6);
+  -ms-transform:scale(0.6);
+  -webkit-transform:scale(0.6);
+  cursor:pointer;
+   z-index:3;
+}
+.device .arrow-right {
+  background: url(./images/fArrow.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  margin-top: -15px;
+  width: 52px;
+  height: 180px;
+  -moz-transform:scale(0.6);
+  -ms-transform:scale(0.6);
+  -webkit-transform:scale(0.6);
+  cursor:pointer;
+   z-index:3;
+}
+*/
+
+/*.swiper-container {
+  height: 800px;
+  width: 400px;
+ 
+}
+.content-slide {
+  padding: 20px;
+  color: #fff;
+}
+#pageTitle {
+  font-size: 25px;
+  font-family:open_sansregular;
+ background:none;
+}
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background: #B9C5DB;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.swiper-active-switch#Pagination_PERWEL{ background: #449eb3;}
+.swiper-active-switch#Pagination_RELATI{ background: #9653ad;}
+.swiper-active-switch#Pagination_HEALTH{ background: #f7ee5b;}
+.swiper-active-switch#Pagination_WHWEDO{ background: #d160b6;}
+.swiper-active-switch#Pagination_WHLIVE{ background: #7ac274;}
+.swiper-active-switch#Pagination_PERFIN{ background: #58e3d0;}
+.swiper-active-switch#Pagination_ECONOM{ background: #f7a41e;}
+.swiper-active-switch#Pagination_EDUSKI{ background: #2d59a2;}
+.swiper-active-switch#Pagination_GOVERN{ background: #307336;}
+.swiper-active-switch#Pagination_NATENV{ background: #bf3224;}*/
+
+#pathCircle, #pathCircle2{
+	opacity:0;
+	/*stroke:red;
+	fill:none;*/
+}
+
+
+
+#pathText, #pathText2{
+	font-family:open_sansregular;
+	fill:white;
+	font-size:8px;
+}
+
+#centre{
+	height:500px;
+	margin-left:-35px;
+	margin-top:235px;
+	position:absolute;
+	width:500px;
+	z-index:1;
+}
+
+#outline{
+	height:1300px;
+	margin-left:-355px;
+	margin-top:-320px;
+	pointer-events:none;
+	position:absolute;
+	z-index:0;
+	opacity:1;
+}
+
+/**************Graph styling*******************/
+.newdiv{
+	width:390px;
+	height:370px;
+	position:absolute;
+	top:60px;
+	margin-left:0px;
+}
+
+.pageSvg{
+	width: 500px;
+	height: 260px;
+	opacity:1;
+	margin-left:-20px;
+}
+
+.summary{
+	padding:30px;
+}
+
+.graph path, .axis{
+		fill:none;
+		stroke: #fff;
+		stroke-width:;	
+		pointer-events:none;
+		opacity:1;
+}
+
+.yGrids{
+	stroke:grey;	
+}
+
+.discontinuity{
+	stroke:#666;	
+}
+.graph text{
+		fill:#fff;
+		font-family: open_sansregular;
+		font-size:11px;
+		text-anchor:middle;
+}
+
+.ticks{
+	fill:red;
+	stroke:blue;
+}
+
+#xAxis text {
+		display:none;
+}
+#yAxis text {
+		stroke:none;
+}
+
+#line1 {
+		stroke:#FC3;
+		stroke-width:2px;
+}
+
+.circles1 {
+	fill:#2B538D;
+	stroke:#FC3;
+	stroke-width:2px;
+}
+
+
+#line2{
+		stroke:#6C9;
+		stroke-width:2px;
+}		
+
+.circles2 {
+	stroke:#6C9;
+	stroke-width:2px;
+	fill:#2B538D;
+}
+
+*[data-sel=Y] {
+	opacity:1;
+}
+
+*[data-sel=N] {
+	opacity:0.2;
+}
+
+/*text[class*='segment_text_']{
+	opacity:1;
+}*/
+
+.graph_info{
+	padding:15px 35px 0px 35px;
+	text-align:center;
+	display:block;
+	font-size:12px;
+}
+
+.disconText text{
+	font-size:9px;
+	text-align:center;
+}
+
+.numbers{
+	margin-top:80px;
+}
+
+.block1, .block2, .block3{
+	display:block;
+	margin:10px;
+	text-align:center;
+}
+
+.data_values{
+	font-size:35px;
+	padding:20px 0px 10px 10px;
+	text-align:center;
+	display:inline;
+	color:#FC3;
+}
+
+.data_units{
+	font-size:17px;
+	
+}
+
+.source_text{
+	font-size:10px;
+	text-align:left;
+	display:block;
+	margin-top:-10px;
+	margin-left:35px;
+}
+
+.graph .chartUnits{
+	display:block;
+	text-anchor:start;
+}

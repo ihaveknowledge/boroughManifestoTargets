@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://www.neighbourhood.statistics.gov.uk/HTMLDocs/dvc146/wheel.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Well-being wheel of measures</title>
+    <script src="./Well-being wheel of measures_files/d3.v3.min.js.download"></script> 
+	
+	
+    <link rel="stylesheet" href="./Well-being wheel of measures_files/jquery-ui-1.10.4.custom.css">
+    <link rel="stylesheet" href="./Well-being wheel of measures_files/idangerous.swiper.css">
+    <link rel="stylesheet" href="./Well-being wheel of measures_files/normalize.css">
+    <link rel="stylesheet" href="./Well-being wheel of measures_files/movies-app.css">
+    <link rel="stylesheet" href="./Well-being wheel of measures_files/pagestyle.css">
+        
+    <style>
+
+@font-face {
+    font-family: 'open_sansregular';
+   src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/OpenSans-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanscond_bold';
+    src: url('fonts/OpenSans-CondBold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanscond_light';
+    src: url('fonts/OpenSans-CondLight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+   </style>
+  </head>
+  <body>
+ 
+<div id="all">
+    <div id="viz">
+        <div class="device">
+            <div class="swiper-container swiper-nav">
+                <div class="swiper-wrapper" style="padding-left: 0px; padding-right: 0px; width: 940px; height: 50px;">
+                    <div class="swiper-slide active-nav swiper-slide-visible swiper-slide-active" id="filterPERWEL" data-filtersel="nosel">
+                        <span class="angle"></span>
+                         
+                        <div class="title" id="txtPERWEL">Personal<br>well-being </div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-visible" id="filterRELATI" data-filtersel="nosel">
+                        <span class="angle"></span>
+                        
+                        <div class="title" id="txtRELATI">Our<br>relationships </div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-visible" id="filterHEALTH" data-filtersel="nosel">
+                        <span class="angle"></span>
+                        
+                        <div class="title" id="txtHEALTH">Health<br> </div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-visible" id="filterWHWEDO" data-filtersel="nosel">
+                        <span class="angle"></span>
+                        
+                        <div class="title" id="txtWHWEDO">What<br>we do</div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-visible" id="filterWHLIVE" data-filtersel="nosel">
+                        <span class="angle"></span>
+                        
+                        <div class="title" id="txtWHLIVE">Where<br>we live</div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-visible" id="filterPERFIN" data-filtersel="nosel">
+                        <span class="angle"></span>
+                       
+                        <div class="title" id="txtPERFIN">Personal<br>finance </div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-visible" id="filterECONOM" data-filtersel="nosel">
+                        <span class="angle"></span>
+                        
+                        <div class="title" id="txtECONOM">Economy<br> </div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-visible" id="filterEDUSKI" data-filtersel="nosel">
+                        <span class="angle"></span>
+                        
+                        <div class="title" id="txtEDUSKI">Education<br>and skills</div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-visible" id="filterGOVERN" data-filtersel="nosel">
+                        <span class="angle"></span>
+                        
+                        <div class="title" id="txtGOVERN">Governance<br> </div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-visible" id="filterNATENV" data-filtersel="nosel">
+                        <span class="angle"></span>
+                        
+                        <div class="title" id="txtNATENV">Natural<br>Environment </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="swiper-container swiper-content" style="height: 460px;">
+                <div class="swiper-wrapper" style="width: 4700px; height: 460px;">
+                    <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_PERWEL">
+                            
+                        <h1><tspan>Personal Well-being</tspan><tspan></tspan><tspan></tspan></h1><p class="summary"><p> The 'Personal well-being' domains looks at people's subjective assessment of their well-being.</p> <p> It ranges from how worthwhile or satisfied we rate our lives, our happiness, feelings of anxiety and mental well-being.</p></p><img id="PERWEL_Img" src="http://www.neighbourhood.statistics.gov.uk/HTMLDocs/dvc146/images/perwel.png" height="375px"></div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_RELATI">
+                           
+                        </div>
+                    </div>
+                
+                    <div class="swiper-slide" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_HEALTH">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_WHWEDO">
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_WHLIVE">
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_PERFIN">
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_ECONOM">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_EDUSKI">
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_GOVERN">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="width: 470px; height: 460px;">
+                        <div class="inner" id="page_NATENV">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>  
+    
+   <div id="slider"></div> 
+    
+<svg id="ring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="940px" height="750px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+<path id="segment_WHWEDO" fill="#D95F99" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M208.7,584.721
+	c0.06,0.062,0.121,0.119,0.182,0.183l-21.918,21.229c65.336,66.346,158.923,98.601,251.592,86.139l-4.177-31.844
+	c-0.031,0.002-0.06,0.006-0.09,0.01l-3.535-26.983c-73.836,9.707-148.44-16.314-200.58-69.521L208.7,584.721z"></path>
+<path id="segment_HEALTH" fill="#D1B900" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M561.108,572.938
+	c-17.691,16.533-38.245,30.591-61.368,41.373c-22.416,10.453-45.644,17.082-68.952,20.142l3.745,28.588
+	c0.028-0.004,0.059-0.01,0.091-0.012l3.969,30.245c29.116-3.916,58.144-12.239,86.169-25.309
+	c28.865-13.461,54.559-30.971,76.71-51.521l-21.844-23.564c-0.007,0.006-0.011,0.008-0.014,0.014L561.108,572.938z"></path>
+<path id="segment_WHLIVE" fill="#A0B844" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M104.287,356.444
+	c-7.674,54.923-0.099,112.625,25.081,166.625c14.769,31.672,34.401,59.51,57.596,83.063l23.924-23.178
+	c-0.06-0.061-0.115-0.121-0.175-0.182l19.462-18.843c-18.478-18.866-34.139-41.131-45.941-66.444
+	c-20.091-43.084-26.262-89.068-20.354-132.853l-26.873-3.655c0.004-0.026,0.008-0.054,0.012-0.081L104.287,356.444z"></path>
+<path id="segment_PERFIN" fill="#00B3AB" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M215.053,163.453
+	c-61.367,48.162-100.281,117.991-110.766,192.991l30.227,4.112c-0.004,0.027-0.008,0.056-0.014,0.082l29.38,3.995
+	c8.098-60.118,38.98-116.067,87.86-154.622l-16.867-21.357c0.015-0.015,0.03-0.025,0.043-0.039L215.053,163.453z"></path>
+<path id="segment_ECONOM" fill="#E28600" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M215.053,163.453l18.9,23.938
+	c-0.016,0.014-0.031,0.024-0.045,0.036l17.834,22.584c14.066-11.093,29.609-20.745,46.545-28.643
+	c16.729-7.801,33.932-13.475,51.265-17.124l-5.649-26.629l0.001,0.001l-6.648-31.363c-21.634,4.603-43.081,11.713-63.987,21.46
+	C252.11,137.578,232.649,149.612,215.053,163.453z"></path>
+<path id="segment_EDUSKI" fill="#3584B8" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M343.58,136.095
+	c-0.001,0.001-0.001,0.001-0.003,0.001l5.974,28.146c36.325-7.638,73.314-6.409,108.128,2.687l6.678-26.324
+	c0.008,0.001,0.016,0.003,0.023,0.005l8.008-31.583c-43.519-11.104-89.717-12.448-135.134-2.773L343.58,136.095z"></path>
+<path id="segment_GOVERN" fill="#298C45" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M464.891,138.595
+	c-0.009-0.003-0.017-0.005-0.024-0.008l-7.188,28.342c23.323,6.093,45.69,15.729,66.266,28.566l14.183-23.104
+	c0.027,0.02,0.059,0.035,0.088,0.055l17.278-28.151c-25.776-15.926-53.842-27.799-83.104-35.268L464.891,138.595z"></path>
+<path id="segment_PERWEL" fill="#5454C9" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M616.918,304.284
+	c25.018,58.438,24.972,121.63,4.357,177.108l27.43,10.455c0.01-0.021,0.019-0.047,0.023-0.067l28.505,10.858
+	c26.308-69.537,26.686-148.795-4.592-222.021l-30.833,13.034c0.015,0.027,0.026,0.06,0.039,0.09L616.918,304.284z"></path>
+<path id="segment_RELATI" fill="#AA74CC" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M621.31,482.391
+	c-12.646,34.062-33.064,65.211-60.199,90.55l19.604,21.141c0.004-0.006,0.009-0.01,0.013-0.014l20.744,22.375
+	c34.045-31.589,59.758-70.384,75.797-112.804l-30.564-11.645c-0.007,0.021-0.02,0.045-0.024,0.065L621.31,482.391z"></path>
+<path id="segment_NATENV" fill="#AD3C39" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M539.537,170.293
+	c-0.033-0.02-0.06-0.038-0.09-0.058l-15.504,25.26c37.819,23.643,69.51,58.183,89.803,101.704c1.099,2.354,2.149,4.717,3.172,7.084
+	l27.669-11.702c-0.013-0.028-0.024-0.06-0.038-0.087l28.093-11.879c-1.289-3.015-2.623-6.014-4.019-9.006
+	c-25.467-54.611-65.418-97.874-113.133-127.316L539.537,170.293z"></path>
+</svg>  
+<div id="div"><img id="outline" src="./Well-being wheel of measures_files/outline recolour.svg"><svg id="svgEle" width="940" height="940" viewBox="-204,-228,650,650"><g id="group" transform="rotate(67)" style="display: inline-block;"><g><path d="M0,133.33333333333334A133.33333333333334,133.33333333333334 0 1,1 0,-133.33333333333334A133.33333333333334,133.33333333333334 0 1,1 0,133.33333333333334Z" id="MIDDLE" class="" data-name="Middle" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtMiddle" class="segment_text_" data-sel="N" text-anchor="left" transform="rotate(90)translate(0)" style="fill: none;"><tspan class="span1" x="-3px">Middle</tspan></text><text id="valsMiddle" class="segment_text_" data-sel="N" text-anchor="start" transform="rotate(54)translate(0)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Middle" class="segment_text_" data-sel="N" text-anchor="start" transform="rotate(149.99999999999997)translate(0)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Middle" class="segment_text_" data-sel="N" text-anchor="start" transform="rotate(0)translate(0)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M1.6328623988631378e-14,-266.6666666666667A266.6666666666667,266.6666666666667 0 0,1 184.91533354459784,-192.13909162687654L69.34325007922418,-72.05215936007869A100,100 0 0,0 6.123233995736766e-15,-100Z" id="PERWEL" class="PERWEL" data-name="Personal well-being" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="Y"></path><text id="txtPersonal well-being" class="segment_text_PERWEL" data-sel="Y" text-anchor="left" transform="rotate(-68.04878048780488)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">Personal well-being</tspan></text><text id="valsPersonal well-being" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-72.4390243902439)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Personal well-being" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-60.73170731707317)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Personal well-being" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-79.02439024390245)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M2.4492935982947064e-14,-400A400,400 0 0,1 61.05971368754979,-395.3121695121394L30.529856843774894,-197.6560847560697A200,200 0 0,0 1.2246467991473532e-14,-200Z" id="SATISF" class="PERWEL" data-name="Very high life satisfaction" data-desc="Very high rating of satisfaction with their lives overall" data-val="[[26.8,],[28.8,]]" data-period="[2013/14],[2014/15]" data-measure="percent" data-outof="" data-path_sel="Y"></path><text id="txtVery high life satisfaction" class="segment_text_PERWEL" data-sel="Y" text-anchor="left" transform="rotate(-85.60975609756098)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Very high life satisfaction</tspan></text><text id="valsVery high life satisfaction" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-86.48780487804878)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">26.8%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Very high life satisfaction" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-84.14634146341463)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">28.8%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Very high life satisfaction" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-87.8048780487805)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M61.05971368754979,-395.3121695121394A400,400 0 0,1 120.68823943807696,-381.35855682197223L60.34411971903848,-190.67927841098611A200,200 0 0,0 30.529856843774894,-197.6560847560697Z" id="WORTHW" class="PERWEL" data-name="Very high worthwhile rating" data-desc="Very high rating of how worthwhile the things they do are" data-val="[[32.6,],[34.4,]]" data-period="[2013/14],[2014/15]" data-measure="percent" data-outof="" data-path_sel="Y"></path><text id="txtVery high worthwhile rating" class="segment_text_PERWEL" data-sel="Y" text-anchor="left" transform="rotate(-76.82926829268293)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Very high worthwhile rating</tspan></text><text id="valsVery high worthwhile rating" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-77.70731707317073)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">32.6%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Very high worthwhile rating" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-75.36585365853658)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">34.4%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Very high worthwhile rating" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-79.02439024390245)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M120.68823943807696,-381.35855682197223A400,400 0 0,1 177.48793514678394,-358.4662227844222L88.74396757339197,-179.2331113922111A200,200 0 0,0 60.34411971903848,-190.67927841098611Z" id="HAPPIN" class="PERWEL" data-name="Very high rating of happiness" data-desc="Rated their happiness yesterday as very high" data-val="[[32.6,],[34.1,]]" data-period="[2013/14],[2014/15]" data-measure="percent" data-outof="" data-path_sel="Y"></path><text id="txtVery high rating of happiness" class="segment_text_PERWEL" data-sel="Y" text-anchor="left" transform="rotate(-68.04878048780488)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Very high rating of happiness</tspan></text><text id="valsVery high rating of happiness" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-68.92682926829268)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">32.6%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Very high rating of happiness" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-66.58536585365853)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">34.1%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Very high rating of happiness" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-70.2439024390244)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M177.48793514678394,-358.4662227844222A400,400 0 0,1 230.12746408744826,-327.17174430668706L115.06373204372413,-163.58587215334353A200,200 0 0,0 88.74396757339197,-179.2331113922111Z" id="ANXIET" class="PERWEL" data-name="Very low anxiety yesterday" data-desc="Rated their anxiety yesterday as very low" data-val="[[39.4,],[40.9,]]" data-period="[2013/14],[2014/15]" data-measure="percent" data-outof="" data-path_sel="Y"></path><text id="txtVery low anxiety yesterday" class="segment_text_PERWEL" data-sel="Y" text-anchor="left" transform="rotate(-59.26829268292683)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Very low anxiety yesterday</tspan></text><text id="valsVery low anxiety yesterday" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-60.14634146341463)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">39.4%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Very low anxiety yesterday" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-57.80487804878049)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">40.9%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Very low anxiety yesterday" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-61.46341463414634)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M230.12746408744826,-327.17174430668706A400,400 0 0,1 277.3730003168967,-288.20863744031476L138.68650015844835,-144.10431872015738A200,200 0 0,0 115.06373204372413,-163.58587215334353Z" id="MENTAL" class="PERWEL" data-name="Population mental well-being" data-desc="Population mental well-being" data-val="[[25.2,],[24.6,]]" data-period="[2009/10],[2012/13]" data-measure="rank" data-outof="35" data-path_sel="Y"></path><text id="txtPopulation mental well-being" class="segment_text_PERWEL" data-sel="Y" text-anchor="left" transform="rotate(-50.48780487804878)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Population mental well-being</tspan></text><text id="valsPopulation mental well-being" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-51.36585365853658)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">25.2/35</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2009/10</tspan></text><text id="vals2Population mental well-being" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-49.02439024390244)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">24.6/35</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2012/13</tspan></text><text id="vals3Population mental well-being" class="segment_text_PERWEL" data-sel="Y" text-anchor="start" transform="rotate(-52.68292682926829)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M184.91533354459784,-192.13909162687654A266.6666666666667,266.6666666666667 0 0,1 250.97067946121646,-90.13783424226737L94.11400479795617,-33.80168784085026A100,100 0 0,0 69.34325007922418,-72.05215936007869Z" id="RELATI" class="RELATI" data-name="Our relationships" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtOur relationships" class="segment_text_RELATI" data-sel="N" text-anchor="left" transform="rotate(-32.92682926829268)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">Our relationships</tspan></text><text id="valsOur relationships" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-35.56097560975609)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Our relationships" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-28.536585365853647)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Our relationships" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-39.512195121951216)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M277.3730003168967,-288.20863744031476A400,400 0 0,1 318.1171485093706,-242.49016438665518L159.0585742546853,-121.24508219332759A200,200 0 0,0 138.68650015844835,-144.10431872015738Z" id="FAMLIF" class="RELATI" data-name="Satisfaction with family life" data-desc="Average rating of satisfaction with family life" data-val="[[8.2,],[8.2,]]" data-period="[2007],[2011]" data-measure="rank" data-outof="10" data-path_sel="N"></path><text id="txtSatisfaction with family life" class="segment_text_RELATI" data-sel="N" text-anchor="left" transform="rotate(-41.70731707317073)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Satisfaction with family life</tspan></text><text id="valsSatisfaction with family life" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-42.58536585365853)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">8.2/10</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2007</tspan></text><text id="vals2Satisfaction with family life" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-40.24390243902439)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">8.2/10</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2011</tspan></text><text id="vals3Satisfaction with family life" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-43.90243902439024)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M318.1171485093706,-242.49016438665518A400,400 0 0,1 351.404900364377,-191.0879274049051L175.7024501821885,-95.54396370245254A200,200 0 0,0 159.0585742546853,-121.24508219332759Z" id="SOCLIF" class="RELATI" data-name="Satisfaction with social life" data-desc="Average rating of satisfaction with social life" data-val="[[7.0,],[7.1,]]" data-period="[2007],[2011]" data-measure="rank" data-outof="10" data-path_sel="N"></path><text id="txtSatisfaction with social life" class="segment_text_RELATI" data-sel="N" text-anchor="left" transform="rotate(-32.92682926829268)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Satisfaction with social life</tspan></text><text id="valsSatisfaction with social life" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-33.80487804878048)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">7.0/10</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2007</tspan></text><text id="vals2Satisfaction with social life" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-31.46341463414634)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">7.1/10</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2011</tspan></text><text id="vals3Satisfaction with social life" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-35.12195121951219)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M351.404900364377,-191.0879274049051A400,400 0 0,1 376.4560191918247,-135.20675136340105L188.22800959591234,-67.60337568170053A200,200 0 0,0 175.7024501821885,-95.54396370245254Z" id="RELYON" class="RELATI" data-name="Someone to rely on" data-desc="Has  a spouse, family member or friend to rely on if they have a serious problem" data-val="[[86.4,],[84.1,]]" data-period="[2010/11],[2013/14]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtSomeone to rely on" class="segment_text_RELATI" data-sel="N" text-anchor="left" transform="rotate(-24.14634146341463)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Someone to rely on</tspan></text><text id="valsSomeone to rely on" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-25.02439024390243)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">86.4%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2010/11</tspan></text><text id="vals2Someone to rely on" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-22.682926829268283)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">84.1%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals3Someone to rely on" class="segment_text_RELATI" data-sel="N" text-anchor="start" transform="rotate(-26.341463414634127)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M250.97067946121646,-90.13783424226737A266.6666666666667,266.6666666666667 0 0,1 257.13426545417093,70.66173391910982L96.4253495453141,26.498150219666183A100,100 0 0,0 94.11400479795617,-33.80168784085026Z" id="HEALTH" class="HEALTH" data-name="Health" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtHealth" class="segment_text_HEALTH" data-sel="N" text-anchor="left" transform="rotate(-2.1951219512195053)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">Health</tspan></text><text id="valsHealth" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(-5.707317073170728)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Health" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(3.658536585365866)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Health" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(-10.975609756097555)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M376.4560191918247,-135.20675136340105A400,400 0 0,1 392.68332799874196,-76.15644366586733L196.34166399937098,-38.078221832933664A200,200 0 0,0 188.22800959591234,-67.60337568170053Z" id="LIFEXP" class="HEALTH" data-name="Healthy life expectancy at birth" data-desc="Healthy life expectancy at birth (male/female)" data-val="[[62.5,64.2],[64.2,66.1]]" data-period="[2006/08],[2009/11]" data-measure="m/f" data-outof="" data-path_sel="N"></path><text id="txtHealthy life expectancy at birth" class="segment_text_HEALTH" data-sel="N" text-anchor="left" transform="rotate(-15.36585365853658)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Healthy life expectancy at birth</tspan></text><text id="valsHealthy life expectancy at birth" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(-16.24390243902438)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-40px" y="5px">62.5</tspan><tspan class="span2b" dx="5px">64.2</tspan><tspan class="span2c" text-anchor="middle" x="35px">2006/08</tspan></text><text id="vals2Healthy life expectancy at birth" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(-13.902439024390233)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-40px" y="5px">64.2</tspan><tspan class="span3b" dx="5px">66.1</tspan><tspan class="span3c" text-anchor="middle" x="35px">2009/11</tspan></text><text id="vals3Healthy life expectancy at birth" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(-17.560975609756085)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-20px">M</tspan><tspan class="span4b" dx="10px">F</tspan></text></g><g><path d="M392.68332799874196,-76.15644366586733A400,400 0 0,1 399.706472420324,-15.321093476014175L199.853236210162,-7.6605467380070875A200,200 0 0,0 196.34166399937098,-38.078221832933664Z" id="DISABL" class="HEALTH" data-name="Illness and disability" data-desc="Classified as equality act core and/or work limiting disabled" data-val="[[16.8,],[17.2,]]" data-period="[Oct-Dec 2014],[Oct-Dec 2015]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtIllness and disability" class="segment_text_HEALTH" data-sel="N" text-anchor="left" transform="rotate(-6.585365853658544)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Illness and disability</tspan></text><text id="valsIllness and disability" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(-7.463414634146346)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">16.8%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">Oct-Dec 2014</tspan></text><text id="vals2Illness and disability" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(-5.121951219512198)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">17.2%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">Oct-Dec 2015</tspan></text><text id="vals3Illness and disability" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(-8.78048780487805)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M399.706472420324,-15.321093476014175A400,400 0 0,1 397.36083590387005,45.8733701593601L198.68041795193503,22.93668507968005A200,200 0 0,0 199.853236210162,-7.6605467380070875Z" id="HELSAT" class="HEALTH" data-name="Satisfied with health" data-desc="Somewhat, mostly or completely satisfied with their health" data-val="[[59.3,],[57.8,]]" data-period="[2012/13],[2013/14]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtSatisfied with health" class="segment_text_HEALTH" data-sel="N" text-anchor="left" transform="rotate(2.1951219512195053)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Satisfied with health</tspan></text><text id="valsSatisfied with health" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(1.3170731707317032)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">59.3%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2012/13</tspan></text><text id="vals2Satisfied with health" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(3.6585365853658516)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">57.8%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals3Satisfied with health" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(0)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M397.36083590387005,45.8733701593601A400,400 0 0,1 385.7013981812564,105.99260087866456L192.8506990906282,52.99630043933228A200,200 0 0,0 198.68041795193503,22.93668507968005Z" id="PSYCHO" class="HEALTH" data-name="Evidence of depression or anxiety" data-desc="Percentage with some evidence indicating depression or anxiety." data-val="[[18.3,],[19.7,]]" data-period="[2012/13],[2013/14]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtEvidence of depression or anxiety" class="segment_text_HEALTH" data-sel="N" text-anchor="left" transform="rotate(10.97560975609754)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Evidence of depression or anxiety</tspan></text><text id="valsEvidence of depression or anxiety" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(10.097560975609738)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">18.3%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2012/13</tspan></text><text id="vals2Evidence of depression or anxiety" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(12.439024390243887)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">19.7%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals3Evidence of depression or anxiety" class="segment_text_HEALTH" data-sel="N" text-anchor="start" transform="rotate(8.78048780487805)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M257.13426545417093,70.66173391910982A266.6666666666667,266.6666666666667 0 0,1 99.68455249087168,247.33398696055858L37.38170718407688,92.75024511020946A100,100 0 0,0 96.4253495453141,26.498150219666183Z" id="WHWEDO" class="WHWEDO" data-name="What we do" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtWhat we do" class="segment_text_WHWEDO" data-sel="N" text-anchor="left" transform="rotate(41.70731707317074)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">What we do</tspan></text><text id="valsWhat we do" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(36.439024390243915)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2What we do" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(50.48780487804879)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3What we do" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(28.536585365853668)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M385.7013981812564,105.99260087866473A400,400 0 0,1 365.00144659062,163.62745486853598L182.50072329531,81.81372743426799A200,200 0 0,0 192.8506990906282,52.996300439332366Z" id="UNEMPR" class="WHWEDO" data-name="Unemployment rate" data-desc="Unemployment rate" data-val="[[5.7,],[5.1,]]" data-period="[Nov-Jan 2015],[Nov-Jan 2016]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtUnemployment rate" class="segment_text_WHWEDO" data-sel="N" text-anchor="left" transform="rotate(19.75609756097562)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Unemployment rate</tspan></text><text id="valsUnemployment rate" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(18.878048780487816)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">5.7%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">Nov-Jan 2015</tspan></text><text id="vals2Unemployment rate" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(21.219512195121965)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">5.1%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">Nov-Jan 2016</tspan></text><text id="vals3Unemployment rate" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(17.560975609756113)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M365.00144659062,163.62745486853598A400,400 0 0,1 335.74617045278,217.42702000048845L167.87308522639,108.71351000024423A200,200 0 0,0 182.50072329531,81.81372743426799Z" id="JOBSAT" class="WHWEDO" data-name="Satisfaction with job" data-desc="Somewhat, mostly or completely satisfied with their job" data-val="[[77.6,],[78.0,]]" data-period="[2012/13],[2013/14]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtSatisfaction with job" class="segment_text_WHWEDO" data-sel="N" text-anchor="left" transform="rotate(28.536585365853668)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Satisfaction with job</tspan></text><text id="valsSatisfaction with job" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(27.658536585365837)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">77.6%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2012/13</tspan></text><text id="vals2Satisfaction with job" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(30.000000000000014)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">78.0%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals3Satisfaction with job" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(26.34146341463415)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M335.74617045278,217.42702000048845A400,400 0 0,1 298.6212886447851,266.1302800662261L149.31064432239256,133.06514003311304A200,200 0 0,0 167.87308522639,108.71351000024423Z" id="LEITIM" class="WHWEDO" data-name="Satisfaction with leisure time" data-desc="Somewhat, mostly or completely satisfied with their amount of leisure time" data-val="[[58.2,],[57.2,]]" data-period="[2012/13],[2013/14]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtSatisfaction with leisure time" class="segment_text_WHWEDO" data-sel="N" text-anchor="left" transform="rotate(37.31707317073172)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Satisfaction with leisure time</tspan></text><text id="valsSatisfaction with leisure time" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(36.439024390243915)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">58.2%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2012/13</tspan></text><text id="vals2Satisfaction with leisure time" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(38.78048780487802)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">57.2%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals3Satisfaction with leisure time" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(35.1219512195122)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M298.6212886447851,266.1302800662261A400,400 0 0,1 254.49697693062402,308.5956719287771L127.24848846531201,154.29783596438855A200,200 0 0,0 149.31064432239256,133.06514003311304Z" id="VOLUNT" class="WHWEDO" data-name="Volunteering" data-desc="Volunteered more than once in the last 12 months" data-val="[[16.7,],[17.4,]]" data-period="[2010/11],[2012/13]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtVolunteering" class="segment_text_WHWEDO" data-sel="N" text-anchor="left" transform="rotate(46.09756097560975)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Volunteering</tspan></text><text id="valsVolunteering" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(45.21951219512192)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">16.7%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2010/11</tspan></text><text id="vals2Volunteering" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(47.5609756097561)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">17.4%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2012/13</tspan></text><text id="vals3Volunteering" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(43.90243902439025)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M254.49697693062402,308.5956719287771A400,400 0 0,1 204.40747177884427,343.8278427948804L102.20373588942213,171.9139213974402A200,200 0 0,0 127.24848846531201,154.29783596438855Z" id="ARTCUL" class="WHWEDO" data-name="Engagement with arts/culture" data-desc="Engaged with/participated in arts or cultural activity at least 3 times in last year" data-val="[[83.4,],[82.4,]]" data-period="[2013/14],[2014/15]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtEngagement with arts/culture" class="segment_text_WHWEDO" data-sel="N" text-anchor="left" transform="rotate(54.8780487804878)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Engagement with arts/culture</tspan></text><text id="valsEngagement with arts/culture" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(54)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">83.4%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Engagement with arts/culture" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(56.34146341463412)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">82.4%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Engagement with arts/culture" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(52.6829268292683)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M204.40747177884427,343.8278427948804A400,400 0 0,1 149.5268287363077,371.0009804408378L74.76341436815385,185.5004902204189A200,200 0 0,0 102.20373588942213,171.9139213974402Z" id="SPORTP" class="WHWEDO" data-name="Sport participation" data-desc="Adult participation in 30 mins of moderate intensity sport, once per week." data-val="[[36.1,],[35.8,]]" data-period="[2013/14],[2014/15]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtSport participation" class="segment_text_WHWEDO" data-sel="N" text-anchor="left" transform="rotate(63.65853658536585)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Sport participation</tspan></text><text id="valsSport participation" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(62.78048780487802)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">36.1%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Sport participation" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(65.1219512195122)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">35.8%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Sport participation" class="segment_text_WHWEDO" data-sel="N" text-anchor="start" transform="rotate(61.46341463414632)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M99.68455249087168,247.33398696055858A266.6666666666667,266.6666666666667 0 0,1 -136.27164785256284,229.2185618632536L-51.10186794471105,85.9569606987201A100,100 0 0,0 37.38170718407688,92.75024511020946Z" id="WHLIVE" class="WHLIVE" data-name="Where we live" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtWhere we live" class="segment_text_WHLIVE" data-sel="N" text-anchor="left" transform="rotate(94.39024390243904)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">Where we live</tspan></text><text id="valsWhere we live" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(89.1219512195122)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Where we live" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(103.17073170731709)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Where we live" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(81.21951219512195)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M149.52682873630752,371.00098044083785A400,400 0 0,1 91.14140356125509,389.4781695511116L45.570701780627545,194.7390847755558A200,200 0 0,0 74.76341436815376,185.50049022041892Z" id="CRIMEP" class="WHLIVE" data-name="Crimes against the person" data-desc="Crimes against the person (per 1,000 adults)" data-val="[[66.0,],[57.0,]]" data-period="[2013/14],[2014/15]" data-measure="val" data-outof="" data-path_sel="N"></path><text id="txtCrimes against the person" class="segment_text_WHLIVE" data-sel="N" text-anchor="left" transform="rotate(72.4390243902439)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Crimes against the person</tspan></text><text id="valsCrimes against the person" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(71.5609756097561)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">66.0</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Crimes against the person" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(73.90243902439025)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">57.0</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Crimes against the person" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(70.2439024390244)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M91.14140356125509,389.4781695511116A400,400 0 0,1 30.619701134598355,398.8263204734962L15.309850567299177,199.4131602367481A200,200 0 0,0 45.570701780627545,194.7390847755558Z" id="WADARK" class="WHLIVE" data-name="Safe walking after dark" data-desc="Felt fairly/very safe walking alone after dark (men/women)" data-val="[[85.1,58.0],[85.8,61.7]]" data-period="[2013/14],[2014/15]" data-measure="m/f" data-outof="" data-path_sel="N"></path><text id="txtSafe walking after dark" class="segment_text_WHLIVE" data-sel="N" text-anchor="left" transform="rotate(81.21951219512195)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Safe walking after dark</tspan></text><text id="valsSafe walking after dark" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(80.34146341463415)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-40px" y="5px">85.1</tspan><tspan class="span2b" dx="5px">58.0</tspan><tspan class="span2c" text-anchor="middle" x="35px">2013/14</tspan></text><text id="vals2Safe walking after dark" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(82.68292682926827)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-40px" y="5px">85.8</tspan><tspan class="span3b" dx="5px">61.7</tspan><tspan class="span3c" text-anchor="middle" x="35px">2014/15</tspan></text><text id="vals3Safe walking after dark" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(79.02439024390245)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-20px">M</tspan><tspan class="span4b" dx="10px">F</tspan></text></g><g><path d="M30.619701134598355,398.8263204734962A400,400 0 0,1 -30.619701134598127,398.8263204734962L-15.309850567299064,199.4131602367481A200,200 0 0,0 15.309850567299177,199.4131602367481Z" id="ACCNAT" class="WHLIVE" data-name="Accessed natural environment" data-desc="Accessed natural environment at least once a week in the last 12 months" data-val="[[58.0,],[58.9,]]" data-period="[2013/14],[2014/15]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtAccessed natural environment" class="segment_text_WHLIVE" data-sel="N" text-anchor="left" transform="rotate(90)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Accessed natural environment</tspan></text><text id="valsAccessed natural environment" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(89.12195121951217)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">58.0%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Accessed natural environment" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(91.46341463414635)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">58.9%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Accessed natural environment" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(87.8048780487805)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-30.619701134598127,398.8263204734962A400,400 0 0,1 -91.14140356125486,389.47816955111165L-45.57070178062743,194.73908477555582A200,200 0 0,0 -15.309850567299064,199.4131602367481Z" id="NEIGHB" class="WHLIVE" data-name="Neighbourhood belonging" data-desc="Agreed/agreed strongly they felt they belonged to their neighbourhood" data-val="[[66.0,],[63.3,]]" data-period="[2009/10],[2011/12]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtNeighbourhood belonging" class="segment_text_WHLIVE" data-sel="N" text-anchor="left" transform="rotate(98.78048780487805)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Neighbourhood belonging</tspan></text><text id="valsNeighbourhood belonging" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(97.90243902439025)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">66.0%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2009/10</tspan></text><text id="vals2Neighbourhood belonging" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(100.24390243902437)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">63.3%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2011/12</tspan></text><text id="vals3Neighbourhood belonging" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(96.58536585365852)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-91.14140356125486,389.47816955111165A400,400 0 0,1 -149.52682873630732,371.0009804408379L-74.76341436815366,185.50049022041895A200,200 0 0,0 -45.57070178062743,194.73908477555582Z" id="GDTRAN" class="WHLIVE" data-name="Transport access to services" data-desc="Households with good transport access to key services or work (2011 = 100)" data-val="[[100.0,],[106.0,]]" data-period="[2011],[2013]" data-measure="val" data-outof="" data-path_sel="N"></path><text id="txtTransport access to services" class="segment_text_WHLIVE" data-sel="N" text-anchor="left" transform="rotate(107.5609756097561)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Transport access to services</tspan></text><text id="valsTransport access to services" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(106.68292682926827)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">100.0</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2011</tspan></text><text id="vals2Transport access to services" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(109.02439024390242)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">106.0</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013</tspan></text><text id="vals3Transport access to services" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(105.36585365853657)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-149.52682873630732,371.0009804408379A400,400 0 0,1 -204.4074717788439,343.8278427948806L-102.20373588942195,171.9139213974403A200,200 0 0,0 -74.76341436815366,185.50049022041895Z" id="ACCSAT" class="WHLIVE" data-name="Satisfaction with accommodation" data-desc="Fairly/very satisfied with their accommodation" data-val="[[90.6,],[89.2,]]" data-period="[2012-13],[2013-14]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtSatisfaction with accommodation" class="segment_text_WHLIVE" data-sel="N" text-anchor="left" transform="rotate(116.34146341463412)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Satisfaction with accommodation</tspan></text><text id="valsSatisfaction with accommodation" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(115.46341463414632)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">90.6%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2012-13</tspan></text><text id="vals2Satisfaction with accommodation" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(117.80487804878044)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">89.2%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013-14</tspan></text><text id="vals3Satisfaction with accommodation" class="segment_text_WHLIVE" data-sel="N" text-anchor="start" transform="rotate(114.14634146341461)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-136.27164785256284,229.2185618632536A266.6666666666667,266.6666666666667 0 0,1 -257.13426545417093,70.66173391910974L-96.4253495453141,26.49815021966615A100,100 0 0,0 -51.10186794471105,85.9569606987201Z" id="PERFIN" class="PERFIN" data-name="Personal finance" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtPersonal finance" class="segment_text_PERFIN" data-sel="N" text-anchor="left" transform="rotate(142.6829268292683)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">Personal finance</tspan></text><text id="valsPersonal finance" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(138.2926829268293)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Personal finance" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(150.00000000000003)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Personal finance" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(131.70731707317074)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-204.4074717788442,343.8278427948804A400,400 0 0,1 -254.49697693062396,308.59567192877716L-127.24848846531198,154.29783596438858A200,200 0 0,0 -102.2037358894221,171.9139213974402Z" id="PERINC" class="PERFIN" data-name="Less than 60% median income" data-desc="Individuals in households with less than 60% of median income after housing costs" data-val="[[21.0,],[21.0,]]" data-period="[2012/13],[2013/14]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtLess than 60% median income" class="segment_text_PERFIN" data-sel="N" text-anchor="left" transform="rotate(125.12195121951223)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Less than 60% median income</tspan></text><text id="valsLess than 60% median income" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(124.2439024390244)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">21.0%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2012/13</tspan></text><text id="vals2Less than 60% median income" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(126.58536585365857)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">21.0%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals3Less than 60% median income" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(122.92682926829269)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-254.49697693062396,308.59567192877716A400,400 0 0,1 -298.62128864478507,266.13028006622613L-149.31064432239253,133.06514003311307A200,200 0 0,0 -127.24848846531198,154.29783596438858Z" id="MEDWEL" class="PERFIN" data-name="Median household wealth" data-desc="Median wealth per household, including pension wealth" data-val="[[216500,],[225100,]]" data-period="[2010/12],[2012/14]" data-measure="pounds" data-outof="" data-path_sel="N"></path><text id="txtMedian household wealth" class="segment_text_PERFIN" data-sel="N" text-anchor="left" transform="rotate(133.90243902439028)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Median household wealth</tspan></text><text id="valsMedian household wealth" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(133.02439024390247)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">£216,500</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2010/12</tspan></text><text id="vals2Median household wealth" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(135.3658536585366)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">£225,100</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2012/14</tspan></text><text id="vals3Median household wealth" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(131.70731707317074)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-298.62128864478507,266.13028006622613A400,400 0 0,1 -335.74617045278006,217.4270200004883L-167.87308522639003,108.71351000024416A200,200 0 0,0 -149.31064432239253,133.06514003311307Z" id="MEDINC" class="PERFIN" data-name="Real median household income" data-desc="Real median household income" data-val="[[24843,],[25660,]]" data-period="[2013/14],[2014/15]" data-measure="pounds" data-outof="" data-path_sel="N"></path><text id="txtReal median household income" class="segment_text_PERFIN" data-sel="N" text-anchor="left" transform="rotate(142.6829268292683)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Real median household income</tspan></text><text id="valsReal median household income" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(141.8048780487805)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">£24,843</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Real median household income" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(144.14634146341464)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">£25,660</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Real median household income" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(140.4878048780488)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-335.74617045278006,217.4270200004883A400,400 0 0,1 -365.0014465906201,163.6274548685357L-182.50072329531005,81.81372743426785A200,200 0 0,0 -167.87308522639003,108.71351000024416Z" id="SATINC" class="PERFIN" data-name="Satisfaction with income" data-desc="Somewhat, mostly or completely satisfied with the income of their household" data-val="[[53.4,],[53.7,]]" data-period="[2012/13],[2013/14]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtSatisfaction with income" class="segment_text_PERFIN" data-sel="N" text-anchor="left" transform="rotate(151.46341463414637)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Satisfaction with income</tspan></text><text id="valsSatisfaction with income" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(150.58536585365854)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">53.4%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2012/13</tspan></text><text id="vals2Satisfaction with income" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(152.92682926829272)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">53.7%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals3Satisfaction with income" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(149.26829268292687)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-365.0014465906201,163.6274548685357A400,400 0 0,1 -385.7013981812565,105.99260087866426L-192.85069909062824,52.99630043933213A200,200 0 0,0 -182.50072329531005,81.81372743426785Z" id="DIFFIN" class="PERFIN" data-name="Reported difficulty with finances" data-desc="Report finding it quite or very difficult to get by financially" data-val="[[10.1,],[9.1,]]" data-period="[2012/13],[2013/14]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtReported difficulty with finances" class="segment_text_PERFIN" data-sel="N" text-anchor="left" transform="rotate(160.24390243902445)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Reported difficulty with finances</tspan></text><text id="valsReported difficulty with finances" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(159.36585365853662)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">10.1%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2012/13</tspan></text><text id="vals2Reported difficulty with finances" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(161.7073170731708)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">9.1%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals3Reported difficulty with finances" class="segment_text_PERFIN" data-sel="N" text-anchor="start" transform="rotate(158.04878048780492)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-257.13426545417093,70.66173391910974A266.6666666666667,266.6666666666667 0 0,1 -261.78888533249466,-50.77096244391165L-98.17083199968549,-19.039110916466868A100,100 0 0,0 -96.4253495453141,26.49815021966615Z" id="ECONOM" class="ECONOM" data-name="Economy" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtEconomy" class="segment_text_ECONOM" data-sel="N" text-anchor="left" transform="rotate(177.8048780487805)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">Economy</tspan></text><text id="valsEconomy" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(175.1707317073171)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Economy" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(182.1951219512195)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Economy" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(171.21951219512198)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-385.7013981812564,105.9926008786646A400,400 0 0,1 -397.36083590387005,45.87337015935997L-198.68041795193503,22.936685079679986A200,200 0 0,0 -192.8506990906282,52.9963004393323Z" id="NETNIN" class="ECONOM" data-name="Real net national disposable income" data-desc="Real net national disposable income per head" data-val="[[22463,],[22786,]]" data-period="[2013],[2014]" data-measure="pounds" data-outof="" data-path_sel="N"></path><text id="txtReal net national disposable income" class="segment_text_ECONOM" data-sel="N" text-anchor="left" transform="rotate(169.02439024390247)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Real net national disposable income</tspan></text><text id="valsReal net national disposable income" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(168.14634146341461)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">£22,463</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013</tspan></text><text id="vals2Real net national disposable income" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(170.4878048780488)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">£22,786</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014</tspan></text><text id="vals3Real net national disposable income" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(166.82926829268297)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-397.36083590387005,45.87337015935997A400,400 0 0,1 -399.706472420324,-15.32109347601448L-199.853236210162,-7.66054673800724A200,200 0 0,0 -198.68041795193503,22.936685079679986Z" id="PSDEBT" class="ECONOM" data-name="Public sector net debt" data-desc="UK public sector net debt as a percentage of Gross Domestic Product" data-val="[[81.0,],[83.7,]]" data-period="[2013/14],[2014/15]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtPublic sector net debt" class="segment_text_ECONOM" data-sel="N" text-anchor="left" transform="rotate(177.80487804878055)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Public sector net debt</tspan></text><text id="valsPublic sector net debt" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(176.9268292682927)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">81.0%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Public sector net debt" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(179.26829268292687)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">83.7%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Public sector net debt" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(175.609756097561)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-399.706472420324,-15.32109347601448A400,400 0 0,1 -392.6833279987419,-76.15644366586781L-196.34166399937095,-38.078221832933906A200,200 0 0,0 -199.853236210162,-7.66054673800724Z" id="INFLAT" class="ECONOM" data-name="Inflation" data-desc="Inflation rate (as measured by the Consumer Price Index)" data-val="[[0.3,],[0.3,]]" data-period="[Jan 2015],[Jan 2016]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtInflation" class="segment_text_ECONOM" data-sel="N" text-anchor="left" transform="rotate(186.58536585365863)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Inflation</tspan></text><text id="valsInflation" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(185.70731707317077)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">0.3%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">Jan 2015</tspan></text><text id="vals2Inflation" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(188.04878048780495)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">0.3%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">Jan 2016</tspan></text><text id="vals3Inflation" class="segment_text_ECONOM" data-sel="N" text-anchor="start" transform="rotate(184.39024390243907)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-261.78888533249466,-50.77096244391165A266.6666666666667,266.6666666666667 0 0,1 -212.078099006247,-161.66010959110358L-79.52928712734261,-60.62254109666384A100,100 0 0,0 -98.17083199968549,-19.039110916466868Z" id="EDUSKI" class="EDUSKI" data-name="Education and skills" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtEducation and skills" class="segment_text_EDUSKI" data-sel="N" text-anchor="left" transform="rotate(204.14634146341461)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">Education and skills</tspan></text><text id="valsEducation and skills" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(201.51219512195127)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Education and skills" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(208.53658536585368)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Education and skills" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(197.56097560975616)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-392.68332799874196,-76.15644366586747A400,400 0 0,1 -376.45601919182457,-135.20675136340134L-188.22800959591228,-67.60337568170067A200,200 0 0,0 -196.34166399937098,-38.078221832933735Z" id="HUMCAP" class="EDUSKI" data-name="Human capital" data-desc="Human capital - the value of individuals&#39; skills, knowledge and competences in labour market" data-val="[[18.78,],[18.95,]]" data-period="[2013],[2014]" data-measure="trillion" data-outof="" data-path_sel="N"></path><text id="txtHuman capital" class="segment_text_EDUSKI" data-sel="N" text-anchor="left" transform="rotate(195.3658536585366)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Human capital</tspan></text><text id="valsHuman capital" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(194.4878048780488)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">£(tn)18.78</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013</tspan></text><text id="vals2Human capital" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(196.82926829268297)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">£(tn)18.95</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014</tspan></text><text id="vals3Human capital" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(193.1707317073171)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-376.45601919182457,-135.20675136340134A400,400 0 0,1 -351.4049003643768,-191.0879274049055L-175.7024501821884,-95.54396370245276A200,200 0 0,0 -188.22800959591228,-67.60337568170067Z" id="GCSENO" class="EDUSKI" data-name="Five or more GCSEs" data-desc="Five or more GCSEs A* to C including English and Maths" data-val="[[53.4,],[53.8,]]" data-period="[2013/14],[2014/15]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtFive or more GCSEs" class="segment_text_EDUSKI" data-sel="N" text-anchor="left" transform="rotate(204.14634146341467)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Five or more GCSEs</tspan></text><text id="valsFive or more GCSEs" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(203.26829268292687)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">53.4%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013/14</tspan></text><text id="vals2Five or more GCSEs" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(205.60975609756105)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">53.8%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014/15</tspan></text><text id="vals3Five or more GCSEs" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(201.95121951219517)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-351.4049003643768,-191.0879274049055A400,400 0 0,1 -318.1171485093702,-242.49016438665564L-159.0585742546851,-121.24508219332782A200,200 0 0,0 -175.7024501821884,-95.54396370245276Z" id="NOQUAL" class="EDUSKI" data-name="No qualifications" data-desc="UK residents aged 16 to 64 with no qualifications" data-val="[[8.6,],[8.6,]]" data-period="[2014],[2015]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtNo qualifications" class="segment_text_EDUSKI" data-sel="N" text-anchor="left" transform="rotate(212.92682926829275)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">No qualifications</tspan></text><text id="valsNo qualifications" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(212.04878048780495)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">8.6%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2014</tspan></text><text id="vals2No qualifications" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(214.39024390243912)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">8.6%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2015</tspan></text><text id="vals3No qualifications" class="segment_text_EDUSKI" data-sel="N" text-anchor="start" transform="rotate(210.73170731707324)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-212.078099006247,-161.66010959110358A266.6666666666667,266.6666666666667 0 0,1 -153.41830939163214,-218.11449620445808L-57.531866021862044,-81.79293607667178A100,100 0 0,0 -79.52928712734261,-60.62254109666384Z" id="GOVERN" class="GOVERN" data-name="Governance" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtGovernance" class="segment_text_GOVERN" data-sel="N" text-anchor="left" transform="rotate(226.09756097560978)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">Governance</tspan></text><text id="valsGovernance" class="segment_text_GOVERN" data-sel="N" text-anchor="start" transform="rotate(224.34146341463418)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Governance" class="segment_text_GOVERN" data-sel="N" text-anchor="start" transform="rotate(229.02439024390247)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Governance" class="segment_text_GOVERN" data-sel="N" text-anchor="start" transform="rotate(221.70731707317077)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-318.11714850937045,-242.49016438665535A400,400 0 0,1 -277.3730003168965,-288.208637440315L-138.68650015844824,-144.1043187201575A200,200 0 0,0 -159.05857425468523,-121.24508219332768Z" id="VOTERS" class="GOVERN" data-name="Voter turnout" data-desc="Voter turnout (at UK General Elections)" data-val="[[65.1,],[66.2,]]" data-period="[2010],[2015]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtVoter turnout" class="segment_text_GOVERN" data-sel="N" text-anchor="left" transform="rotate(221.70731707317077)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Voter turnout</tspan></text><text id="valsVoter turnout" class="segment_text_GOVERN" data-sel="N" text-anchor="start" transform="rotate(220.82926829268297)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">65.1%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2010</tspan></text><text id="vals2Voter turnout" class="segment_text_GOVERN" data-sel="N" text-anchor="start" transform="rotate(223.17073170731715)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">66.2%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2015</tspan></text><text id="vals3Voter turnout" class="segment_text_GOVERN" data-sel="N" text-anchor="start" transform="rotate(219.51219512195127)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-277.3730003168965,-288.208637440315A400,400 0 0,1 -230.12746408744786,-327.17174430668734L-115.06373204372393,-163.58587215334367A200,200 0 0,0 -138.68650015844824,-144.1043187201575Z" id="TRUSTG" class="GOVERN" data-name="Trust in Government" data-desc="Those who have trust in national Government" data-val="[[31.0,],[31.0,]]" data-period="[2014],[2015]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtTrust in Government" class="segment_text_GOVERN" data-sel="N" text-anchor="left" transform="rotate(230.48780487804885)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Trust in Government</tspan></text><text id="valsTrust in Government" class="segment_text_GOVERN" data-sel="N" text-anchor="start" transform="rotate(229.609756097561)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">31.0%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2014</tspan></text><text id="vals2Trust in Government" class="segment_text_GOVERN" data-sel="N" text-anchor="start" transform="rotate(231.95121951219517)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">31.0%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2015</tspan></text><text id="vals3Trust in Government" class="segment_text_GOVERN" data-sel="N" text-anchor="start" transform="rotate(228.29268292682934)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-153.41830939163214,-218.11449620445808A266.6666666666667,266.6666666666667 0 0,1 -4.898587196589413e-14,-266.6666666666667L-1.8369701987210297e-14,-100A100,100 0 0,0 -57.531866021862044,-81.79293607667178Z" id="NATENV" class="NATENV" data-name="Natural Environment" data-desc="" data-val="[[na,],[na,]]" data-period="[na],[na]" data-measure="" data-outof="" data-path_sel="N"></path><text id="txtNatural Environment" class="segment_text_NATENV" data-sel="N" text-anchor="left" transform="rotate(252.4390243902439)translate(98.66666666666667)" style="fill: none;"><tspan class="span1" x="-3px">Natural Environment</tspan></text><text id="valsNatural Environment" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(248.9268292682927)translate(186.66666666666666)" opacity="0.4" style="fill: none;"><tspan class="span2a" x="-35px" y="0px"></tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">na</tspan></text><text id="vals2Natural Environment" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(258.2926829268293)translate(186.66666666666666)" style="fill: none;"><tspan class="span3a" x="-35px" y="0px"></tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">na</tspan></text><text id="vals3Natural Environment" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(243.65853658536588)translate(186.66666666666666)" style="fill: none;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-230.12746408744817,-327.1717443066871A400,400 0 0,1 -177.48793514678368,-358.4662227844223L-88.74396757339184,-179.23311139221116A200,200 0 0,0 -115.06373204372409,-163.58587215334356Z" id="GRNGAS" class="NATENV" data-name="Greenhouse gas emissions" data-desc="Total green house gas emissions (millions of tonnes)" data-val="[[557.3,],[514.4,]]" data-period="[2013],[2014]" data-measure="val" data-outof="" data-path_sel="N"></path><text id="txtGreenhouse gas emissions" class="segment_text_NATENV" data-sel="N" text-anchor="left" transform="rotate(239.26829268292687)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Greenhouse gas emissions</tspan></text><text id="valsGreenhouse gas emissions" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(238.390243902439)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">557.3</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013</tspan></text><text id="vals2Greenhouse gas emissions" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(240.7317073170732)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">514.4</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014</tspan></text><text id="vals3Greenhouse gas emissions" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(237.07317073170736)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-177.48793514678368,-358.4662227844223A400,400 0 0,1 -120.68823943807658,-381.35855682197234L-60.34411971903829,-190.67927841098617A200,200 0 0,0 -88.74396757339184,-179.23311139221116Z" id="PROTEC" class="NATENV" data-name="Protected areas in the UK" data-desc="Protected areas in the UK (Millions hectares)" data-val="[[21.4,],[21.4,]]" data-period="[2014],[2015]" data-measure="val" data-outof="" data-path_sel="N"></path><text id="txtProtected areas in the UK" class="segment_text_NATENV" data-sel="N" text-anchor="left" transform="rotate(248.04878048780495)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Protected areas in the UK</tspan></text><text id="valsProtected areas in the UK" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(247.1707317073171)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">21.4</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2014</tspan></text><text id="vals2Protected areas in the UK" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(249.51219512195127)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">21.4</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2015</tspan></text><text id="vals3Protected areas in the UK" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(245.85365853658539)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-120.68823943807658,-381.35855682197234A400,400 0 0,1 -61.0597136875493,-395.3121695121395L-30.52985684377465,-197.65608475606976A200,200 0 0,0 -60.34411971903829,-190.67927841098617Z" id="RENEWE" class="NATENV" data-name="Renewable energy consumption" data-desc="Energy consumed within the UK from renewable sources" data-val="[[5.6,],[7.0,]]" data-period="[2013],[2014]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtRenewable energy consumption" class="segment_text_NATENV" data-sel="N" text-anchor="left" transform="rotate(256.829268292683)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Renewable energy consumption</tspan></text><text id="valsRenewable energy consumption" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(255.95121951219517)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">5.6%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013</tspan></text><text id="vals2Renewable energy consumption" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(258.29268292682934)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">7.0%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014</tspan></text><text id="vals3Renewable energy consumption" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(254.63414634146346)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g><g><path d="M-61.0597136875493,-395.3121695121395A400,400 0 0,1 6.37063927811259e-13,-400L3.185319639056295e-13,-200A200,200 0 0,0 -30.52985684377465,-197.65608475606976Z" id="RECYCL" class="NATENV" data-name="Recycling rates" data-desc="Household waste that is recycled" data-val="[[44.1,],[44.9,]]" data-period="[2013],[2014]" data-measure="percent" data-outof="" data-path_sel="N"></path><text id="txtRecycling rates" class="segment_text_NATENV" data-sel="N" text-anchor="left" transform="rotate(265.60975609756105)translate(197.33333333333334)" style="fill: white;"><tspan class="span1" x="-3px">Recycling rates</tspan></text><text id="valsRecycling rates" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(264.73170731707324)translate(373.3333333333333)" opacity="0.4" style="fill: white;"><tspan class="span2a" x="-35px" y="0px">44.1%</tspan><tspan class="span2b" dx="25px"></tspan><tspan class="span2c" text-anchor="middle" x="30px">2013</tspan></text><text id="vals2Recycling rates" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(267.0731707317074)translate(373.3333333333333)" style="fill: white;"><tspan class="span3a" x="-35px" y="0px">44.9%</tspan><tspan class="span3b" dx="25px"></tspan><tspan class="span3c" text-anchor="middle" x="30px">2014</tspan></text><text id="vals3Recycling rates" class="segment_text_NATENV" data-sel="N" text-anchor="start" transform="rotate(263.41463414634154)translate(373.3333333333333)" style="fill: white;"><tspan class="span4a" text-anchor="middle" x="-35px"></tspan><tspan class="span4b" dx="25px"></tspan></text></g></g></svg></div></div>
+
+
+
+
+
+
+
+  
+  	<script src="./Well-being wheel of measures_files/jquery-1.9.1.min.js.download"></script> 
+    <script src="./Well-being wheel of measures_files/idangerous.swiper-2.0.min.js.download"></script>
+	<script src="./Well-being wheel of measures_files/movies-app.js.download"></script>
+    <script src="./Well-being wheel of measures_files/jquery-1.10.2.js.download"></script>
+	<script src="./Well-being wheel of measures_files/jquery-ui-1.10.4.custom.js.download"></script>
+    <script type="text/javascript">
+    
+
+//init function
+
+$(window).load(function(){
+	
+	
+	
+	
+	d3.select("#group")
+					.style("display", "inline-block")
+					.attr("transform", "rotate(67)");
+									
+
+										
+	
+	//d3.selectAll(".PERWEL").on("click", magnify);
+	//$("#PERWEL" ).emulateClick();	
+	//d3.selectAll(".PERWEL").on("click", null);
+	
+	
+	//load some data
+
+			d3.json("data/config.json", function(json)	{
+
+				chartConfig=json;
+
+				//console.log(json);
+
+				for (var i=0;i<chartConfig.vars.length;i++)
+
+					{
+
+						var myLabel=chartConfig.vars[i];
+
+						var myName=chartConfig.filenames[i];
+
+						var optn = document.createElement("OPTION");
+
+							optn.text = myLabel;
+
+							optn.id = myName;
+							
+							//console.log(optn+"   "+myLabel+"   "+ myName)
+
+						//document.getElementById('selectMe').options.add(optn);
+
+					}
+
+				//loadtopicData();
+
+			});
+		})	
+			
+			
+			
+			
+			function loadtopicData()
+						{
+						
+						//selector=document.getElementById('selectMe');
+						
+						var filepth = 'data/' + segment.toLowerCase()+".json";
+						//alert(filepth);
+						
+						d3.json(filepth, function(json)	{
+								chartData=json;
+								//console.log(chartData)
+								makePage();
+						});
+							}
+							
+			function makePage()
+						{
+							
+							
+									var selPage =d3.select("#page_"+topic);
+									
+									//selPage.append("text").text(segment);
+									//selPage.append("p").append("text").text(topic);
+									
+									selPage.selectAll("text").remove();
+									selPage.selectAll("p").remove();
+									selPage.selectAll(".newdiv").remove();
+									selPage.selectAll("h1").remove();
+									selPage.selectAll("img").remove();
+									
+									var heading = selPage.append("h1")
+										heading.append("tspan").text(chartData.name1)
+										heading.append("tspan").text(chartData.name2)
+										heading.append("tspan").text(chartData.name3);
+										
+									if(segment=="PERWEL"||segment=="RELATI"||segment=="HEALTH"||segment=="WHWEDO"||segment=="WHLIVE"||segment=="PERFIN"||segment=="ECONOM"||segment=="EDUSKI"||segment=="GOVERN"||segment=="NATENV"){
+											selPage.append("p").attr("class", "summary").html(chartData.pageInfo);
+											$("#page_"+topic).append('<img id="'+topic+'_Img" src="'+chartData.filepth+'" height="375px" />')
+									} else {
+												if(chartData.dataValues[0].length<=3){
+															//Values
+															var format = d3.format(',0f');
+															
+															if(chartData.units=="pounds"){ 
+																	var val1 = "£ "+format(chartData.dataValues[0][0]);
+															} else {
+																	var val1 = chartData.dataValues[0][0].toFixed(1)+""+chartData.units;
+															}
+															
+															if (chartData.dataValues[0][1]==undefined){ 
+																											var val2 = "";
+																										} else { 
+																													if(chartData.units=="pounds"){ 
+																															var val2 = "£ "+format(chartData.dataValues[0][1]);
+																													} else {
+																															var val2 = chartData.dataValues[0][1].toFixed(1)+""+chartData.units; 																													}
+																											};
+															if (chartData.dataValues[0][2]==undefined){ 
+																											var val3 = "";
+																										} else { 
+																													if(chartData.units=="pounds"){
+																															var val3 = "£ "+format(chartData.dataValues[0][2]);
+																													} else {
+																															var val3 = chartData.dataValues[0][2].toFixed(1)+""+chartData.units; 																													}
+																											};
+															
+															//Units
+															var unit1 = " in "+chartData.catLabels[0];
+															if (chartData.catLabels[1]==undefined){ 
+																											var unit2 = "";
+																										} else { 
+																											var unit2 = " in "+chartData.catLabels[1]; 
+																											};
+															if (chartData.catLabels[2]==undefined){ 
+																											var unit3 = "";
+																										} else { 
+																											var unit3 = " in "+chartData.catLabels[2]; 
+																											};
+															
+															
+															var values = selPage.append("div")
+																			.attr("class","newdiv")
+																			.append("div")
+																			.attr("class", "numbers");
+																				
+																var block1 = values.append("div").attr("class","block1")
+																			
+																		block1.append("text")
+																			.attr("class","data_values")
+																			.text(function(d){ return  val1;});
+																		
+																		block1.append("text")
+																			.attr("class","data_units")
+																			.text(function(d){ return  unit1;});
+																			
+																var block2 = values.append("div").attr("class","block2")
+																			
+																		block2.append("text")
+																			.attr("class","data_values")
+																			.text(function(d){ return  val2;});
+																		
+																		block2.append("text")
+																			.attr("class","data_units")
+																			.text(function(d){ return  unit2;});
+																			
+																var block3 = values.append("div").attr("class","block3")
+																			
+																		block3.append("text")
+																			.attr("class","data_values")
+																			.text(function(d){ return  val3;});
+																		
+																		block3.append("text")
+																			.attr("class","data_units")
+																			.text(function(d){ return  unit3;});
+																			
+																//$("#page_"+topic).append('<img id="'+topic+'_Img" src="'+chartData.filepth+'" height="375px" />');
+																
+												} else {
+			
+															var width = 320,
+																height =140,
+																paddingX=60,
+																paddingY=80,																
+																maxY1=d3.max(chartData.dataValues[0]),
+																maxY2=d3.max(chartData.dataValues[1]),
+																maxyVal=/*d3.max([maxY1, maxY2])*/chartData.maxVal,
+																maxxVal=d3.max(chartData.catLabels),
+																minxVal=d3.min(chartData.catLabels);
+																
+																//console.log(maxY1+"   "+maxY2+"   "+maxyVal+"   "+maxxVal+"   "+minxVal);
+																
+															 xScale=d3.scale.ordinal()
+																		.domain(chartData.catLabels)
+																		.rangePoints([0,width]);	
+																		
+															 yScale=d3.scale.linear()
+															 			.domain([0,maxyVal])
+																		.rangeRound([height,0])
+																		.nice();								
+															
+															var formatxAxis = d3.format('.0f');
+																					
+															 xAxis=d3.svg.axis()
+																			.scale(xScale)
+																			.orient("bottom")
+																			.tickFormat(formatxAxis)
+																			.tickValues(xScale.domain().filter(function(d, i) { return !(i % 2); }));						
+																					
+															var graph = selPage.append("div").attr("class","newdiv").append("svg").attr("class", "pageSvg")
+																			.append("g")
+																			.attr("class", "graph");
+																			
+															graph.selectAll("yGrids")
+																		.data(yScale.ticks(5))
+																		.enter().append("line")
+																		.attr("class", "yGrids")
+																		.attr("x1", 0)
+																		.attr("y1", function(d){return yScale(d)})	
+																		.attr("x2", width)
+																		.attr("y2", function(d){return yScale(d)})
+																		.attr("transform", "translate("+paddingX+","+paddingY+")");		
+																							
+															graph.append('g').attr("class", "axis")
+																			.attr("id", "xAxis")
+																			.attr("transform", "translate("+paddingX+","+(paddingY+height)+")")
+																			.call(xAxis);					
+															 
+															yAxis=d3.svg.axis()
+																			.scale(yScale)
+																			.orient("left")
+																			.ticks(5);
+												
+															graph.append('g').attr("class", "axis")
+																			.attr("id", "yAxis")
+																			.attr("transform", "translate("+paddingX+","+paddingY+")")
+																			.call(yAxis);	
+																			
+																							
+																		
+																
+															
+															dataValues1 = chartData.dataValues[0];
+															dataValues2 = chartData.dataValues[1];
+															catLabels = chartData.catLabels;
+																					
+															 line1 =d3.svg.line()
+																			.defined(function(d){ return d != null;})
+																			.x(function(dataValues1,i) { 
+																					//console.log('X value :' + catLabels[i] + '  at: ' + xScale(catLabels[i]) + ' using  xScale.');
+																					return xScale(catLabels[i]); 
+																			})
+																			.y(function(catLabels,i) { 
+																					//console.log('Y value: ' + dataValues1[i] + ' at: ' + yScale(dataValues1[i]) + " using  yScale.");
+																					return yScale(dataValues1[i]); 
+																		});
+																		
+																		
+																		graph.append("g").append("path")				
+																			.attr("class", "discontinuity")
+																			.attr("d", function (){
+																								return ("M"+	xScale(chartData.discontinuity)	+","+ 	yScale(0)+ 
+																										"L"+	xScale(chartData.discontinuity)	+","+	0)
+																						})	
+																			.attr("transform", "translate("+paddingX+","+paddingY+")");
+																		
+																		graph.append("g")
+																			.attr("class","disconText")		 
+																			.append("text")
+																			.text(chartData.footnote)
+																			.attr("transform", "translate("+(paddingX+xScale(chartData.discontinuity))+","+75+")");
+																	
+																		
+																		graph.append("path")
+																			.attr("id","line1")
+																			.attr("d", line1(dataValues1))
+																			 .attr("transform", "translate("+paddingX+","+paddingY+")");						
+																					
+																		graph.append('g')
+																		.selectAll("circle")
+																		.data(dataValues1)
+																		.enter()
+																		.append("circle")
+																		.attr("class", "circles1")
+																			.attr("cx", function(d,i){ 
+																							return xScale(catLabels[i])
+																				})
+																			.attr("cy",function(d) { 
+																							return yScale(d); 
+																				})
+																			.attr("r",function(d){ return d ==null ? 0 : 3})
+																			.attr("transform", "translate("+paddingX+","+paddingY+")");
+																		
+																		graph.append("g").selectAll("text")
+																		.data(dataValues1)
+																		.enter()
+																		.append("text")
+																			.attr("x",  function(d,i){ 
+																							return xScale(catLabels[i])
+																				})
+																			.attr("class", "axisText")
+																			.attr("y", function(d){
+																				 return yScale(0)
+																				})	
+																			.attr("transform", "translate("+paddingX+","+(paddingY+25)+")")	
+																			.text(function(d,i){
+																					if(catLabels.length>8){								
+																						return i % 2 ? null : chartData.catLabels[i] ;	
+																					} else {
+																						return  chartData.catLabels[i]
+																					}
+																					
+																				});
+																		
+																		graph.append("g").selectAll("path")
+																			.data(dataValues1)
+																			.enter()
+																			.append("path")				
+																			.attr("class", "ticks")
+																			.attr("d", function (d,i){
+																							if(catLabels.length>8){
+																								return i % 2 ? null : ("M" +xScale(catLabels[i])+","+ 	140+ 
+																										"L"+	xScale(catLabels[i])	+","+	145)
+																							} else {
+																								return ("M"+	xScale(catLabels[i])	+","+ 	140+ 
+																										"L"+	xScale(catLabels[i])	+","+	145)
+																							}
+																						})	
+																			.attr("transform", "translate("+paddingX+","+paddingY+")");
+																			
+																																				
+																line2 =d3.svg.line()
+																			.defined(function(d){ return d != null;})
+																			.x(function(dataValues2,i) { 
+																					return xScale(catLabels[i]); 
+																			})
+																			.y(function(catLabels,i) { 
+																					return yScale(dataValues2[i]); 
+																		});
+																		
+																		
+																		
+																		graph.append("path")
+																			.attr("id","line2")
+																			.attr("d", line2(dataValues2))
+																			 .attr("transform", "translate("+paddingX+","+paddingY+")");						
+																					
+																		graph.append('g')
+																		.selectAll("circle")
+																		.data(dataValues2)
+																		.enter()
+																		.append("circle")
+																		.attr("class", "circles2")
+																			.attr("cx", function(d,i){ 
+																							return xScale(catLabels[i])
+																				})
+																			.attr("cy",function(d) { 
+																							return yScale(d); 
+																				})
+																			.attr("r",function(d){ return d ==null ? 0 : 3})
+																			.attr("transform", "translate("+paddingX+","+paddingY+")");				
+																			
+																graph.append("g").append("text")
+																		.attr("class","chartUnits")
+																		.text(chartData.units)
+																		.attr("transform", "translate("+55+","+70+")")
+																		
+																graph.append("g").append("text")
+																		.attr("class","key")
+																		.text(chartData.topic[0])
+																		.attr("transform", "translate("+330+","+195+")")
+																		
+																if(chartData.topic[0]=="Male"){ graph.append("rect").attr("x", 365)
+																									.attr("y", 190)
+																									.attr("width", 20)
+																									.attr("height", 3)
+																									.attr("fill", "#FC3");
+																								}
+																														
+																graph.append("g").append("text")
+																		.attr("class","key")
+																		.text(chartData.topic[1])
+																		.attr("transform", "translate("+335+","+210+")")
+																		
+																if(chartData.topic[1]=="Female"){ graph.append("rect").attr("x", 365)
+																									.attr("y", 205)
+																									.attr("width", 20)
+																									.attr("height", 3)
+																									.attr("fill", "#6C9");
+																								}
+																			
+												}
+												
+												
+						d3.select(".newdiv").append("g")
+							.attr("class", "source_text")
+							.append("text")
+							.html("Source: "+chartData.source+"<br>Geography: "+chartData.geography);
+											
+						d3.select(".newdiv")
+							.append("g")
+							.attr("class","graph_info")		
+							.append("text")
+							.text(chartData.info);
+											
+				/*		d3.select(".newdiv")
+							.append("g")
+							.attr("class","graph_fNote")		 
+							.append("text")
+							.text(chartData.footnote);*/
+		
+									}
+							
+						}
+						
+			function killPage()
+						{
+							d3.select("#page_"+topic).selectAll("text").remove();
+							d3.select("#page_"+topic).selectAll("h1").remove();
+							d3.select("#page_"+topic).selectAll("p").remove();
+							d3.select("#page_"+topic).select(".newdiv").remove();
+							//d3.select("#page_"+topic).append("text").text(topic);
+							loadtopicData(segment)
+						}
+			
+			/**********Update summary page for each topic***********/
+
+
+
+
+
+	
+	
+						
+
+	
+
+var w = 940,
+    h = 940,
+    r = 400,
+	topic = "PERWEL",
+	segment ="PERWEL";
+   
+var partition = d3.layout.partition()
+    .size([2 * Math.PI, r])
+    .value(function(d) { return 1; })
+	.sort(null);
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return d.x; })
+    .endAngle(function(d) { return d.x + d.dx; })
+    .innerRadius(function(d) { return 0.75*d.y;})
+    .outerRadius(function(d) { return d.y + d.dy;});
+
+var div = d3.select("#all").append("div")
+						   .attr("id", "div")
+
+var svg = d3.select("#div").append("svg")
+						   .attr("id", "svgEle")
+						   .attr("width", w)
+						   .attr("height", h)
+						   //.attr("viewBox","-470,-470,940,940")
+						   .attr("viewBox","-204,-228,650,650")						   
+						   .append("g")
+						   .attr("id", "group");
+var dataset;
+
+
+
+d3.json("./data/wellbeing.json", function(root) {
+  
+   dataset = root;
+ 
+  var g = svg.selectAll("g")
+		.data(partition.nodes(root))
+		.enter().append("g");
+  
+ path = g.append("path")
+      .attr("d", arc)
+      //.on("click", magnify)
+	  .on("mouseover", mouseover)
+	  .on("mouseout", mouseout)
+      //.each(stash)
+	  .attr("id", function(d) { return (d.children ? d : d.parent ? d : d.parent).code; })
+	  .attr("class", function(d) { return (d.children ? d : d.parent ? d : d.parent).class; })
+	  .attr("data-name", function(d) { return (d.children ? d : d.parent ? d : d.parent).name; })
+	  .attr("data-desc", function(d) { return (d.children ? d : d.parent ? d : d.parent).desc; })
+	  .attr("data-val", function(d) { return "[["+(d.children ? d : d.parent ? d : d.parent).val[0]+"],["+(d.children ? d : d.parent ? d : d.parent).val[1]+"]]"; })
+	  .attr("data-period", function(d) { return "["+(d.children ? d : d.parent ? d : d.parent).period[0]+"],["+(d.children ? d : d.parent ? d : d.parent).period[1]+"]"; })
+	  .attr("data-measure", function(d) { return (d.children ? d : d.parent ? d : d.parent).measure; })
+	  .attr("data-outof", function(d) { return (d.children ? d : d.parent ? d : d.parent).outof; })
+	  .attr("data-path_sel", 'N');
+	  
+
+
+//d3.select("#svgEle")
+//	.append("path")
+//	.attr("d","M 0, 0        m -138, 0        a 138,138 0 1,0 276,0        a 138,138 0 1,0 -276,0")
+//	//.attr("transform", "translate(" + width / 2 + "," + (height / 2 ) + ")")
+//	.attr("id", "pathCircle")
+//	.attr("pointer-events","none");
+//	
+//d3.select("#svgEle")
+//	.append("path")
+//	.attr("d","M 0, 0        m -150, 0        a 150,150 0 1,0 300,0        a 150,150 0 1,0 -300,0")
+//	//.attr("transform", "translate(" + width / 2 + "," + (height / 2 ) + ")")
+//	.attr("id", "pathCircle2")
+//	.attr("pointer-events","none");
+//			
+//d3.select("#svgEle").append("g")
+//	.append("text")
+//	.attr("id", "circleText")
+//	.append("textPath")
+//	.attr("id", "pathText")
+//	.attr("xlink:href", "#pathCircle")
+//	.attr("startOffset","50%")
+//	.attr("text-anchor", "middle")
+//	.attr("dy","-10px")
+//	.text("PERSONAL")
+//
+//d3.select("#svgEle").append("g")
+//	.append("text")
+//	.append("textPath")
+//	.attr("id", "pathText2")
+//	.attr("xlink:href", "#pathCircle2")
+//	.attr("startOffset","50%")
+//	.attr("text-anchor", "middle")
+//	.attr("dy","-10px")
+//	.text("WELL-BEING")
+
+//$("#div").prepend("<img id='centre' src = './images/centre.svg'/>");
+$("#div").prepend("<img id='outline' src = './images/outline recolour.svg'/>");
+
+d3.select("#ring").selectAll("path").on("click", spin);
+
+
+var title = g.append("text")
+      .attr("id", function(d, i) { return "txt"+d.name;} )
+	  .attr("class", function(d, i) { return "segment_text_"+d.class;} )
+	  .attr("data-sel", 'N')
+	  .attr("text-anchor", "left")
+	  .attr("transform", function(d) {
+        var angle = (d.x+d.dx / 2)* (180 / Math.PI)-90; 
+          //  console.log("d.x="+d.x+"  d.dx="+d.dx);
+        return "rotate(" + angle + ")translate(" + 0.74*(d.y) +")";
+      }) 
+	  //.attr("opacity", 0.4)
+  	  .style("fill", function(d) {            
+										if (d.outer == "99") {
+											return "none"
+										} else { 
+											return "white"
+										};
+									})
+	  /*.on("click", magnify)*/;
+ 
+   title.append("tspan")
+   		.attr("class", "span1")
+		.attr("x","-3px")
+		.text(function(d){ return d.name});
+
+
+
+
+var firstLine = g.append("text")
+      .attr("id", function(d, i) { return "vals"+d.name;} )
+	  .attr("class",function(d, i) { return "segment_text_"+d.class;} )
+	   .attr("data-sel", 'N')
+	  .attr("text-anchor", "start")
+	  .attr("transform", function(d) {
+        var angle = (d.x + d.dx / 2.5) * (180 / Math.PI)-90;
+        return "rotate(" + angle + ")translate(" + 1.4*(d.y) +")";
+      })
+	  .attr("opacity", 0.4)
+	  .style("fill", function(d) {            
+										if (d.outer == "99") {
+											return "none"
+										} else { 
+											return "white"
+										};
+									}) 
+	 /* .on("click", magnify)*/;
+ 	var comma =  d3.format(',0f');
+
+  firstLine.append("tspan")
+   		.attr("class", "span2a")
+		/*.attr("y", function(d){		if(d.measure=="m/f"){
+											return "-15px";
+									} else {
+											return "0px";
+									}
+								
+			})*/
+		.attr("x",function(d){		if(d.measure=="m/f"){
+											return "-40px";
+									} else if(d.measure=="percent" & d.val[0][0]==0){
+											return "-24px"
+									} else {
+											return "-35px";
+									}
+								
+			})
+		.attr("y",function(d){		if(d.measure=="m/f"){
+											return "5px";
+									} else {
+											return "0px";
+									}
+								
+			})
+		.text(function(d){ 		if(d.val[0][0]!=""){
+											if(d.measure=="pounds"){
+														return "£"+comma(d.val[0][0]);
+											} else if (d.measure=="trillion"){
+														return "£(tn)"+d.val[0][0];
+											} else if (d.measure=="m/f"){
+														return d.val[0][0];
+											} else if (d.measure=="percent"){ if (d.val[0][0]==0){
+																			  	return "   -";
+																			  } else {
+																			  	return d.val[0][0] +"%";
+																			  }
+											} else if (d.measure=="rank"){
+														return d.val[0][0] + "/" +d.outof;
+											} else if (d.measure=="val"){
+														return d.val[0][0];
+											} else {
+														return "";	
+											}
+								} else {
+									return "";
+								}
+		})
+
+	firstLine.append("tspan")
+   		.attr("class", "span2b")
+		.attr("dx", function(d){		if(d.measure=="m/f"){
+											return "5px";
+									} else {
+											return "25px";
+									}
+								
+			})
+		/*.attr("y", function(d){		if(d.measure=="m/f"){
+											return "15px";
+									} else {
+											return "0px";
+									}
+								
+			})*/
+		.text(function(d){ 		if(d.val[0][1]!=""){
+											if(d.measure=="pounds"){
+														return "£"+comma(d.val[0][1]);
+											} else if (d.measure=="trillion"){
+														return "£(tn)"+d.val[0][1];
+											} else if (d.measure=="m/f"){
+														return d.val[0][1];
+											} else if (d.measure=="percent"){
+														return d.val[0][1] +"%";
+											} else if (d.measure=="rank"){
+														return d.val[0][1] + "/" +d.outof;
+											} else if (d.measure=="val"){
+														return d.val[0][1];
+											} else {
+														return "";	
+											}
+								} else {
+									return "";
+								}
+			})
+			
+	 firstLine.append("tspan")
+   		.attr("class", "span2c")
+		.attr("text-anchor", "middle")
+		.attr("x", function(d){		if(d.measure=="m/f"){
+											return "35px";
+									} else {
+											return "30px";
+									}
+								
+			})
+		.text(function(d){ return d.period[0];})
+		
+		
+		
+var secondLine = g.append("text")
+      .attr("id", function(d, i) { return "vals2"+d.name;} )
+	  .attr("class", function(d, i) { return "segment_text_"+d.class;} )
+	  .attr("data-sel", 'N')
+	  .attr("text-anchor", "start")
+	  .attr("transform", function(d) {
+        var angle = (d.x + d.dx /1.5) * (180 / Math.PI)-90;
+        return "rotate(" + angle + ")translate(" + 1.4*(d.y) +")";
+      })
+	  //.attr("opacity", 0)
+	  .style("fill", function(d) {            
+										if (d.outer == "99") {
+											return "none"
+										} else { 
+											return "white"
+										};
+									}) 
+	 /* .on("click", magnify)*/;
+	var comma =  d3.format(',0f');
+	
+	secondLine.append("tspan")
+   		.attr("class", "span3a")
+		/*.attr("y", function(d){		if(d.measure=="m/f"){
+											return "-15px";
+									} else {
+											return "0px";
+									}
+								
+			})*/
+		.attr("x",function(d){		if(d.measure=="m/f"){
+											return "-40px";
+									} else {
+											return "-35px";
+									}
+								
+			})
+		.attr("y",function(d){		if(d.measure=="m/f"){
+											return "5px";
+									} else {
+											return "0px";
+									}
+								
+			})
+		.text(function(d){ 		if(d.val[1][0]!=""){
+											if(d.measure=="pounds"){
+														return "£"+comma(d.val[1][0]);
+											} else if (d.measure=="trillion"){
+														return "£(tn)"+d.val[1][0];
+											} else if (d.measure=="m/f"){
+														return d.val[1][0];
+											} else if (d.measure=="percent"){
+														return d.val[1][0] +"%";
+											} else if (d.measure=="rank"){
+														return d.val[1][0] + "/" +d.outof;
+											} else if (d.measure=="val"){
+														return d.val[1][0];
+											} else {
+														return "";	
+											}
+								} else {
+									return "";
+								}
+				});
+	
+	secondLine.append("tspan")
+   		.attr("class", "span3b")
+		.attr("dx", function(d){		if(d.measure=="m/f"){
+											return "5px";
+									} else {
+											return "25px";
+									}
+								
+			})
+		/*.attr("y", function(d){		if(d.measure=="m/f"){
+											return "10px";
+									} else {
+											return "0px";
+									}
+								
+			})*/
+		.text(function(d){ 		if(d.val[1][1]!=""){
+											if(d.measure=="pounds"){
+														return "£"+comma(d.val[1][1]);
+											} else if (d.measure=="trillion"){
+														return "£(tn)"+d.val[1][1];
+											} else if (d.measure=="m/f"){
+														return d.val[1][1];
+											} else if (d.measure=="percent"){
+														return d.val[1][1] +"%";
+											} else if (d.measure=="rank"){
+														return d.val[1][1] + "/" +d.outof;
+											} else {
+														return "";	
+											}
+								} else {
+									return "";
+								}
+				});
+
+
+				
+	secondLine.append("tspan")
+   		.attr("class", "span3c")
+		.attr("text-anchor", "middle")
+		.attr("x",function(d){		if(d.measure=="m/f"){
+											return "35px";
+									} else {
+											return "30px";
+									}
+								
+			})
+		.text(function(d){ return d.period[1];})			
+
+
+var thirdLine = g.append("text")
+      .attr("id", function(d, i) { return "vals3"+d.name;} )
+	  .attr("class", function(d, i) { return "segment_text_"+d.class;} )
+	  .attr("data-sel", 'N')
+	  .attr("text-anchor", "start")
+	  .attr("transform", function(d) {
+        var angle = (d.x + d.dx /4) * (180 / Math.PI)-90;
+        return "rotate(" + angle + ")translate(" + 1.4*(d.y) +")";
+      })
+	  //.attr("opacity", 0)
+	  .style("fill", function(d) {            
+										if (d.outer == "99") {
+											return "none"
+										} else { 
+											return "white"
+										};
+									}) 
+									
+	thirdLine.append("tspan")
+   		.attr("class", "span4a")
+		.attr("text-anchor", "middle")
+		.attr("x",function(d){		if(d.measure=="m/f"){
+											return "-20px";
+									} else {
+											return "-35px";
+									}
+								
+			})
+		.text(function(d){ 		if(d.val[1][1]!=""){
+											if(d.measure=="m/f"){
+														return "M";
+											} else {
+														return "";	
+											}
+								} else {
+									return "";
+								}
+				});			
+
+	thirdLine.append("tspan")
+   		.attr("class", "span4b")
+		.attr("dx", function(d){		if(d.measure=="m/f"){
+											return "10px";
+									} else {
+											return "25px";
+									}
+								
+			})
+		.text(function(d){ 		if(d.val[1][1]!=""){
+											if(d.measure=="m/f"){
+														return "F";
+											} else {
+														return "";	
+											}
+								} else {
+									return "";
+								}
+				});	
+
+/*********Create device***********/
+d3.select(".swiper-nav")
+		.selectAll(".swiper-slide")
+		.data(dataset.children)
+		.attr("id", function(d, i){return "filter"+d.code})
+		.attr("data-filtersel","nosel")
+		.on("click", filterSelect);
+		
+d3.selectAll(".title")
+		.data(dataset.children)
+		//.attr("class", "filterspan")
+		.attr("id", function(d, i){return "txt"+d.code})
+		.html(function(d, i){
+			return (d.depth ? d.name.split(" ")[0] || "" : "")+"<br>"+(d.depth ? d.name.split(" ")[1] || "" : "")  + " " + (d.depth ? d.name.split(" ")[2] || "" : "") });
+		
+	  		
+d3.selectAll(".inner")
+		.data(dataset.children)
+	  	.attr("id",function(d, i){
+			return "page_"+d.code
+		})
+		.select("h1")
+		.text(function(d, i){
+			return d.name;
+		})
+		
+
+d3.selectAll(".segment_text_PERWEL").attr("data-sel", "Y");
+	d3.selectAll(".PERWEL").attr("data-path_sel", "Y");
+	d3.select("#page_PERWEL").append("h1").append("tspan").text("Personal Well-being")
+	d3.select("#page_PERWEL").append("p").attr("class", "summary").html("<p> The 'Personal well-being' domain looks at people's subjective assessment of their well-being. </p><p> It ranges from how worthwhile or satisfied we rate our lives, our happiness, feelings of anxiety and mental well-being. </p>");
+	
+	$("#page_PERWEL").append('<img id="PERWEL_Img" src="images/perwel.png" height="350px" />')		
+
+
+			
+});
+
+function spin() {
+	var	selectId = $(this).attr('id');
+	var string = selectId.substr(8,14)
+	//console.log(string);
+	$("#filter"+ string).emulateClick();
+}
+// Distort the specified node to 80% of its parent.
+//function magnify(node) {
+
+
+  //if (parent = node.parent) {
+//    var parent,
+//        x = parent.x,
+//        k = .2;
+//    parent.children.forEach(function(sibling) {
+//      x += reposition(sibling, x, sibling === node
+//          ? parent.dx * k / node.value
+//          : parent.dx * (1 - k) / (parent.value - node.value));
+//    });
+//  } else {
+//    reposition(node, 0, node.dx / node.value);
+//  }
+
+//	path.transition()
+//      	.duration(750)
+//      	//.attrTween("d", arcTween)
+//		.each("end", function(e, i){
+//			
+//				// get a selection of the associated text element
+//				var selected = $(this).attr("data-sel");
+//						
+//						if (selected=="Y"){
+//							d3.select(this.parentNode).select("[id*=txt]")
+//									.attr("opacity", 1)
+//									
+//							d3.select(this.parentNode).select("[id*=vals]")
+//									.attr("opacity", 1)
+//									
+//							d3.select(this.parentNode).select("[id*=vals2]")
+//									.attr("opacity", 1)
+//						} else {
+//							d3.select(this.parentNode).select("[id*=txt]")
+//									.attr("opacity", 0.4)
+//									
+//							d3.select(this.parentNode).select("[id*=vals]")
+//									.attr("opacity", 0.4)
+//											
+//							d3.select(this.parentNode).select("[id*=vals2]")
+//									.attr("opacity", 0.4)
+//						}
+//					
+//						
+//				var arcText = d3.select(this.parentNode).select("[id*=txt]");
+//							
+//				// fade in the text element and recalculate positions
+//				arcText.transition().duration(550)
+//						.attr("transform", function(d) {
+//									var angle2 = (d.x + d.dx / 2) * (180 / Math.PI)-90;
+//									
+//									return "rotate(" + angle2 + ")translate(" + (0.8*(e.y) ) + ")";
+//														}
+//							)
+//							
+							
+				/*var arcVal = d3.select(this.parentNode).select("[id*=vals]");
+									
+				// fade in the text element and recalculate positions
+				arcVal.transition().duration(550)
+						.attr("transform", function(d) {
+									var angle2 = (d.x + d.dx / 1.25) * (180 / Math.PI)-90;
+									
+									return "rotate(" + angle2 + ")translate(" + (1*(e.y) ) + ")";
+														}
+							)
+							*/
+//				var arcVal2 = d3.select(this.parentNode).select("[id*=vals2]");
+//									
+//				// fade in the text element and recalculate positions
+//				arcVal2.transition().duration(550)
+//						.attr("transform", function(d) {
+//									var angle2 = (d.x + d.dx / 2) * (180 / Math.PI)-90;
+//									
+//									return "rotate(" + angle2 + ")translate(" + (1.3*(e.y) ) + ")";
+//														}
+//							)			
+//							
+//			});
+//}
+
+// Recursively reposition the node at position x with scale k.
+//function reposition(node, x, k) {
+//  node.x = x;
+//  if (node.children && (n = node.children.length)) {
+//    var i = -1, n;
+//    while (++i < n) x += reposition(node.children[i], x, k);
+//  }
+//  return node.dx = node.value * k;  
+//}
+//
+//// Stash the old values for transition.
+//function stash(d) {
+//  d.x0 = d.x;
+//  d.dx0 = d.dx;
+//
+//}
+
+// Interpolate the arcs in data space.
+//function arcTween(a) {
+//  var i = d3.interpolate({x: a.x0, dx: a.dx0}, a);
+//  return function(t) {
+//    var b = i(t);
+//    a.x0 = b.x;
+//    a.dx0 = b.dx;
+//    return arc(b);
+//  };
+//}
+
+
+//emulate click
+jQuery.fn.emulateClick = function () {
+			this.each(function(i,e) {
+				var evt = document.createEvent("MouseEvents");
+				evt.initEvent("click",true,true);
+				
+				e.dispatchEvent(evt);
+		});
+};
+
+
+var old_now=-2;
+function filterSelect(){ 
+						//d3.selectAll("path").on("click", magnify);
+							
+						
+						var	selection = $(this).attr('id');
+						var section = selection.substr(6,6);
+						
+						topic = section;
+						segment = topic;
+						 killPage(segment);
+								
+						/*var name = $("#"+section).attr("data-name");
+						var caps = name.toUpperCase();
+						var caps1 = caps.split(" ")[0];
+						var caps2 = caps.split(" ")[1];
+						var caps3 = caps.split(" ")[2];
+						
+						if (caps2==undefined){
+							 var text2= "";	
+						} else {
+							var text2= caps2;	
+						};
+						
+						if (caps3==undefined){
+							 var text3= "";	
+						} else {
+							var text3= caps3;	
+						};*/
+						
+										
+						selectedpath = '.'+section;
+						selectedfilter = '#filter'+section;
+						
+						
+						d3.selectAll("text[class*='segment_text_']").attr("data-sel", "N");
+						d3.select("#group").selectAll("path").attr("data-path_sel", "N");
+
+						d3.selectAll(".segment_text_"+section).attr("data-sel", "Y");
+						d3.select("#group").selectAll(selectedpath).attr("data-path_sel", "Y");
+												
+						d3.select(".swiper-nav").selectAll(".swiper-slide").attr("data-filtersel", "nosel");
+						d3.select(selectedfilter).attr("data-filtersel", "sel");
+						
+				
+						/*d3.select("#pathText").text(caps1);
+						d3.select("#pathText2").text(text2+" "+text3);*/
+									
+						
+						d3.select("#group").transition()
+										   .duration(500)
+										   .attr("transform", function() { 
+										   			if(section == "PERWEL"){
+														return "rotate(68)";
+													} else if (section == "RELATI"){
+														return "rotate(33)";
+													} else if (section == "HEALTH"){
+														return "rotate(-2)";	
+													} else if (section == "WHWEDO"){
+														return "rotate(-42)";	
+													} else if (section == "WHLIVE"){
+														return "rotate(-94)";
+													} else if (section == "PERFIN"){
+														return "rotate(-143)";	
+													} else if (section == "ECONOM"){	
+														return "rotate(-178)";
+													} else if (section == "EDUSKI"){
+														return "rotate(-204)";	
+													} else if (section == "GOVERN"){	
+														return "rotate(-226)";
+													} else if (section=="NATENV"){
+													return "rotate(-252)";	
+													}
+												});
+												
+						
+					
+function AnimateRotate(d){
+    $({deg: old_now}).animate({deg: d}, {
+		duration:500,
+        step: function(now, fx){
+            $("#outline").css({
+                 transform: "rotate(" + now + "deg)"
+				 
+            });
+			$("#ring").css({
+                 transform: "rotate(" + now + "deg)"
+				 
+            });
+			old_now=now;
+        }
+    });
+}
+
+
+
+if(section == "PERWEL"){
+	return AnimateRotate(1);
+} else if (section == "RELATI"){
+	return AnimateRotate(-34);
+} else if (section == "HEALTH"){
+	return AnimateRotate(-69);	
+} else if (section == "WHWEDO"){
+	return AnimateRotate(-109);	
+} else if (section == "WHLIVE"){
+	return AnimateRotate(-161);
+} else if (section == "PERFIN"){
+	return AnimateRotate(-210);	
+} else if (section == "ECONOM"){	
+	return AnimateRotate(-245);
+} else if (section == "EDUSKI"){
+	return AnimateRotate(-271);
+} else if (section == "GOVERN"){	
+	return AnimateRotate(-293);
+} else if (section=="NATENV"){
+return AnimateRotate(-319);
+}
+																		
+								
+					//$("#" + section).emulateClick();	
+					
+					/*var pagination ="Pagination_"+section, page_id = "Page_"+ section;
+					
+					$("#" + pagination).emulateClick();	
+					$("#" + page_id).emulateClick();	*/
+					//d3.selectAll("path").on("click", null);
+					
+					
+					
+					
+					
+};	//end of filterSelectS function
+
+
+
+
+function mouseover(d) { 
+		//d3.select("#page_"+topic).selectAll("text").remove();	
+		
+		var	selectId = $(this).attr('id');
+			var	selectClass = $(this).attr('class');
+	//console.log(selectId+"  "+selectClass);
+	if(selectClass ==topic){
+		segment = selectId;
+	} else {
+		segment = topic;	
+	}
+	
+       
+	   killPage(segment);	  
+}
+
+function mouseout(d) {
+		var	selectId = $(this).attr('id');
+		var	selectClass = $(this).attr('class');
+					
+		segment=topic;	
+}
+ 
+ 
+function slider(d) {
+		$( "#slider" ).slider({
+			range: true,
+			values: [ 17, 67 ]
+		});
+ }	
+ 
+
+    </script>
+ 
+ 
+    
+  
+
+</body></html>
