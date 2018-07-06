@@ -1,0 +1,91 @@
+{
+ "name": "borough_manifesto",
+ "children": [{
+    "name": "Health and Wellbing",
+      "children": [{"name": "Physical Activity", "size": 1,
+                      "children": [
+                          {"name": "Walking", "size": 1},
+                          {"name": "Cycling", "size": 1},
+                          {"name": "Active Residents", "size": 1}]
+                        },
+                   {"name": "Healthy Life Expectancy", "size": 1,
+                      "children": [
+                          {"name": "Male Healthy Life", "size": 1},
+                          {"name": "Female Healthy Life", "size": 1}]
+                        },
+                   {"name": "Wellbeing and Happiness", "size": 1,
+                      "children": [
+                          {"name": "Life satisfaction", "size": 1},
+                          {"name": "Worthiness", "size": 1},
+                          {"name": "Happiness", "size": 1},
+                          {"name": "Anxiety", "size": 1}]
+                        },
+                   {"name": "Healthy Weight", "size": 1,
+                      "children": [
+                          {"name": "Year 6 healthy weight", "size": 1},
+                          {"name": "Adult obesity", "size": 1},
+                          {"name": "NHS Admissions", "size": 1}]
+                        }]},
+      {"name": "Employment and Enterprise",
+        "children": [{"name": "Unemployment", "size": 1,
+                      "children": [
+                          {"name": "Unemployment rate", "size": 1},
+                          {"name": "Employment rate", "size": 1},
+                          {"name": "ESA and JSA", "size": 1}]
+                        },
+                   {"name": "Growth in Business", "size": 1,
+      			"children": [
+			        {"name": "New business survive 5 years", "size": 1},
+			        {"name": "Job density", "size": 1},
+			        {"name": "Total job growth", "size": 1}]
+			},
+                   {"name": "Income", "size": 1,
+			 "children": [
+				        {"name": "Gross Median annual earnings", "size": 1}]
+			}]}, 
+	{"name": "Safety",
+	      "children": [{"name": "Domestic Violence", "size": 1,
+		      "children": [
+				      {"name": "Domestic Violence and abuse", "size": 1},
+				      {"name": "Average number of offenses", "size": 1}]
+			},
+                   	{"name": "Antisocial Behaviour", "size": 1,
+			      "children": [
+				        {"name": "Police recorded ASB", "size": 1},
+				        {"name": "Council recorded ASB", "size": 1},
+				        {"name": "Perceived safety", "size": 1},
+				        {"name": "Hate Crimes", "size": 1}]
+				}] }, 
+	{"name": "Skills and Education",
+	      "children": [{"name": "Educational Attainment", "size": 1,
+				"children": [
+					{"name": "Qualifications level 1 and above", "size": 1},
+					{"name": "Qualifications level 4 and above", "size": 1},
+					{"name": "Attainment 8 score per pupil", "size": 1}]
+				}]
+    }, {
+      "name": "Environment",
+   	   "children": [{"name": "Recycling", "size": 1,
+			"children": [
+					{"name": "Waste produced per household", "size": 1},
+					{"name": "Recycling rates", "size": 1},
+					{"name": "Perception of 'litter and dirt in streets'", "size": 1}]
+			}]
+    }, {
+      "name": "Community Engagement",
+      		"children": [{"name": "Regular Community Engagement", "size": 1,
+			"children": [
+					{"name": "Regularly engage with Everyone Everyday", "size": 1},
+					{"name": "People volunteering", "size": 1}]
+			}]
+    }, {
+      "name": "Housing",
+	      "children": [{"name": "Build 50,000 new homes", "size": 1,
+			"children": [
+					{"name": "Percentage of new homes built againts target", "size": 1},
+					{"name": "Additional affordable homes", "size": 1},
+					{"name": "Ratio of house prices to earnings", "size": 1},
+					{"name": "Median private sector rent", "size": 1},
+				{"name": "Council housing in decent condition", "size": 1}
+                   ]}]
+    }]};

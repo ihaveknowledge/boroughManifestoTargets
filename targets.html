@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 960px;
+}
+
+path {
+  stroke: transparent;
+  fill-opacity: 70%;
+  shape-rendering: crisp-edges;
+}
+
+path.selected {
+  stroke: red;
+  fill-opacity: 100%;
+  stroke-width: 1px;
+  shape-rendering: crisp-edges;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2em;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+</style>
+
+<body>
+<div class = "container">
+<div id="wheel">
+</div>
+<div id="bar">
+</div>
+</div>
+
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="datavis.js"></script>
+</body>
+</html>
